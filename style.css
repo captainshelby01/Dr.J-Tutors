@@ -54,7 +54,7 @@ body {
     background-color: var(--neutral-light);
     color: var(--neutral-dark);
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .container {
@@ -1420,6 +1420,26 @@ p {
 
 /* Mobile Nav Toggle states: max-width 768px */
 @media (max-width: 768px) {
+    .site-header {
+        padding: 0.6rem 0;
+    }
+
+    .logo-img {
+        height: 36px;
+        width: 36px;
+    }
+
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .nav-cta-btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
+        min-height: 36px;
+        white-space: nowrap;
+    }
+
     .hamburger-menu {
         display: flex;
     }
