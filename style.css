@@ -386,6 +386,8 @@ p {
 }
 
 .hero-promo-img {
+    position: relative;
+    z-index: 2;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     border: 8px solid #ffffff;
