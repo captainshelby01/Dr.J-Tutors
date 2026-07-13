@@ -2385,36 +2385,43 @@ p {
     background: var(--primary-light);
 }
 
-/* Responsive */
+/* Responsive - Mobile: vertical stack with small arrow badges */
 @media (max-width: 768px) {
+
     .curricula-cards-row {
         flex-direction: column;
-        align-items: stretch;
-        gap: 0;
+        align-items: center;
+        gap: 0.4rem;
     }
 
     .curricula-card {
         max-width: 100%;
+        width: 100%;
         flex: unset;
-        border-radius: 0;
-        border-bottom: none;
-    }
-
-    .curricula-card:first-of-type {
-        border-radius: var(--radius-md) var(--radius-md) 0 0;
-    }
-
-    .curricula-card:last-of-type {
-        border-radius: 0 0 var(--radius-md) var(--radius-md);
-        border-bottom: 2px solid rgba(111, 45, 168, 0.15);
     }
 
     .curricula-equiv-arrow {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background: var(--secondary);
+        border-radius: 50%;
+        color: #fff;
+        font-size: 0.85rem;
+        flex-shrink: 0;
+        box-shadow: 0 3px 10px rgba(111, 45, 168, 0.25);
+        z-index: 1;
+    }
+
+    .curricula-equiv-arrow i {
+        transform: rotate(90deg);
+        display: block;
     }
 
     .curricula-level-block {
-        padding: 1.25rem;
+        padding: 1.25rem 1rem;
     }
 
     .curricula-also-covers {
@@ -2423,4 +2430,5 @@ p {
         text-align: center;
     }
 }
+
 
