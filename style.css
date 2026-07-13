@@ -2390,19 +2390,31 @@ p {
     .curricula-cards-row {
         flex-direction: column;
         align-items: stretch;
+        gap: 0;
     }
 
     .curricula-card {
         max-width: 100%;
         flex: unset;
+        border-radius: 0;
+        border-bottom: none;
+    }
+
+    .curricula-card:first-of-type {
+        border-radius: var(--radius-md) var(--radius-md) 0 0;
+    }
+
+    .curricula-card:last-of-type {
+        border-radius: 0 0 var(--radius-md) var(--radius-md);
+        border-bottom: 2px solid rgba(111, 45, 168, 0.15);
     }
 
     .curricula-equiv-arrow {
-        transform: rotate(90deg);
+        display: none;
     }
 
     .curricula-level-block {
-        padding: 1.5rem;
+        padding: 1.25rem;
     }
 
     .curricula-also-covers {
