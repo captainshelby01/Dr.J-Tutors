@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             // Format WhatsApp URL link
-            const whatsappNumber = '2348109995491'; // Client business WhatsApp number
+            const whatsappNumber = '2349074818280'; // Client business WhatsApp number
             const encodedMessage = encodeURIComponent(whatsappMessage);
             const waUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
             
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="modal-summary">We help students understand better, build confidence, and achieve excellent results.</p>
                 <p class="modal-footnote">🚀 Let’s help your child Learn. Pass. Excel.</p>
             `,
-            whatsappUrl: "https://wa.me/2348109995491?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20booking%20a%20session%20for%20the%20Home%20%26%20Online%20Tutoring%20Package."
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20booking%20a%20session%20for%20the%20Home%20%26%20Online%20Tutoring%20Package."
         },
         gcse: {
             title: "IGCSE & GCSE Exam Prep",
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>We help students understand concepts clearly, build confidence, and achieve better exam results.</p>
                 <p class="modal-footnote">🇬🇧 UK Students (also available for 🇨🇦 🇺🇸 🌍)</p>
             `,
-            whatsappUrl: "https://wa.me/2348109995491?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20IGCSE%20%26%20GCSE%20Preparation%20Package."
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20IGCSE%20%26%20GCSE%20Preparation%20Package."
         },
         maths: {
             title: "Dr. J Kiddies Maths Tutorials",
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="modal-summary">A 30-day trial will convince you!</p>
                 <p class="modal-footnote">✨ Dr. J Kiddies Tutorials!</p>
             `,
-            whatsappUrl: "https://wa.me/2348109995491?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20Kiddies%20Maths%20Tutorials%20Package."
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20Kiddies%20Maths%20Tutorials%20Package."
         },
         learn: {
             title: "Learn",
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p style="margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.6;">Get personalized, structured learning plans with experienced tutors. We help you master your subjects, clear up difficult topics, and build confidence from day one.</p>
                 <p style="font-weight: 600; color: var(--neutral-dark);">Send Dr. J a message now to get started!</p>
             `,
-            whatsappUrl: "https://wa.me/2348109995491?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20learning%20more%20about%20your%20tutoring%20services.%20Please%20help%20me%20get%20started."
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20learning%20more%20about%20your%20tutoring%20services.%20Please%20help%20me%20get%20started."
         },
         pass: {
             title: "Pass",
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p style="margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.6;">Prepare thoroughly for your exams (WAEC, NECO, JAMB, GCSE, IGCSE, SAT, A-Levels, 11+ Prep). Acquire the techniques and confidence needed to ace your tests and earn top grades.</p>
                 <p style="font-weight: 600; color: var(--neutral-dark);">Send Dr. J a message now to pass with flying colors!</p>
             `,
-            whatsappUrl: "https://wa.me/2348109995491?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20enquire%20about%20exam%20preparation%20classes%20to%20help%20my%20child%20pass%20their%20upcoming%20exams."
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20enquire%20about%20exam%20preparation%20classes%20to%20help%20my%20child%20pass%20their%20upcoming%20exams."
         },
         excel: {
             title: "Excel",
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p style="margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.6;">Achieve long-term academic excellence and open doors to top grammar and secondary schools. Master critical thinking, build strong foundations, and graduate at the top of your class.</p>
                 <p style="font-weight: 600; color: var(--neutral-dark);">Send Dr. J a message now to unlock academic excellence!</p>
             `,
-            whatsappUrl: "https://wa.me/2348109995491?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20your%20long-term%20academic%20excellence%20program%20for%20my%20child."
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20your%20long-term%20academic%20excellence%20program%20for%20my%20child."
         }
     };
 
