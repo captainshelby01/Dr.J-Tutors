@@ -247,9 +247,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="modal-intro"><strong>Is your child struggling with Maths?</strong></p>
                 <p>Worry no more! Because with Dr. J Tutors, your child can become a Maths genius!</p>
                 <ul class="modal-bullets">
-                    <li>🇬🇧 <strong>UK:</strong> Grade 1–6</li>
+                    <li>🇬🇧 <strong>UK:</strong> Year 1–6</li>
                     <li>🇳🇬 <strong>Nigeria:</strong> Primary 1–6</li>
-                    <li>🇺🇸 <strong>USA:</strong> Year 1–6</li>
+                    <li>🇺🇸 <strong>USA:</strong> Grade 1–6</li>
                 </ul>
                 <p><strong>Open for Virtual and Physical Classes</strong></p>
                 <p class="modal-summary">A 30-day trial will convince you!</p>
