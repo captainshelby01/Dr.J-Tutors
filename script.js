@@ -137,8 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 flyerCards.forEach(card => {
                     const category = card.getAttribute('data-category');
-                    
-                    if (filterValue === 'all' || category === filterValue) {
+                    if (filterValue === 'all' || (category && category.split(' ').includes(filterValue))) {
                         card.style.display = 'flex';
                         // Add fade-in micro-animation
                         card.style.opacity = '0';
@@ -210,8 +209,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalWhatsAppBtn = document.getElementById('modalWhatsAppBtn');
     const openModalBtns = document.querySelectorAll('.open-flyer-modal');
 
-    // Flyer detailed data dictionary
     const flyerData = {
+        summer: {
+            title: "Dr. J Summer Lessons",
+            image: "./flyer-summer.jpg",
+            description: `
+                <p class="modal-intro">☀️🚀 <strong>Give Your Child a Head Start with Dr. J Summer Lessons!</strong></p>
+                <p>The <em>Dr. J Summer Lessons (DSL)</em> program provides <strong>personalized</strong> home and online tutoring structured to build confidence, improve grades, and prepare students for the upcoming academic session.</p>
+                
+                <h4 class="modal-subheading">Who Can Be Enrolled?</h4>
+                <ul class="modal-bullets">
+                    <li>🏫 <strong>Levels:</strong> Year 1–12 | Grade 1–12 | Primary 1–6 | JSS 1–3 | SSS 1–3</li>
+                    <li>📝 <strong>Exam Prep:</strong> SAT, GCSE, UK 11+, WAEC, JAMB, Common Entrance</li>
+                    <li>📚 <strong>Subjects:</strong> Maths, English, Sciences, Commercial & Art Subjects</li>
+                    <li>🌍 <strong>Curriculums:</strong> UK, US, Nigerian, Canadian, and other international systems</li>
+                </ul>
+
+                <h4 class="modal-subheading">Why Parents Choose Us:</h4>
+                <ul class="modal-bullets">
+                    <li>🗓️ Flexible learning schedules</li>
+                    <li>🎓 Experienced & professional tutors</li>
+                    <li>💻 Home & Online classes available</li>
+                    <li>📈 Proven academic strategies</li>
+                </ul>
+                <p class="modal-footnote">✨ Secure your child's spot for the summer today!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20Summer%20Lessons%20Package."
+        },
         general: {
             title: "Home & Online Tutoring",
             image: "./flyer-general.png",
@@ -247,9 +271,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="modal-intro"><strong>Is your child struggling with Maths?</strong></p>
                 <p>Worry no more! Because with Dr. J Tutors, your child can become a Maths genius!</p>
                 <ul class="modal-bullets">
-                    <li>🇬🇧 <strong>UK:</strong> Year 1–6</li>
-                    <li>🇳🇬 <strong>Nigeria:</strong> Primary 1–6</li>
                     <li>🇺🇸 <strong>USA:</strong> Grade 1–6</li>
+                    <li>🇳🇬 <strong>Nigeria:</strong> Primary 1–6</li>
+                    <li>🇬🇧 <strong>UK:</strong> Year 1–6</li>
                 </ul>
                 <p><strong>Open for Virtual and Physical Classes</strong></p>
                 <p class="modal-summary">A 30-day trial will convince you!</p>
