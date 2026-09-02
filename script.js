@@ -210,6 +210,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const openModalBtns = document.querySelectorAll('.open-flyer-modal');
 
     const flyerData = {
+        school: {
+            title: "Welcome Back to School!",
+            image: "./flyer-back-to-school.jpg",
+            description: `
+                <p class="modal-intro">🏫🎒 <strong>Welcome Back to School! Here's to Academic Excellence!</strong></p>
+                <p>Start the new academic year with maximum confidence! <em>Dr. J Tutors</em> provides personalized home and online tutoring structured to build solid foundations, boost grades, and foster true academic mastery.</p>
+                
+                <h4 class="modal-subheading">Core Subjects Covered:</h4>
+                <ul class="modal-bullets">
+                    <li>📐 <strong>Mathematics:</strong> Algebra, Geometry, Arithmetic & Exam Prep</li>
+                    <li>📖 <strong>English Language:</strong> Reading, Writing, Grammar & Literature</li>
+                    <li>🔬 <strong>Sciences:</strong> Physics, Chemistry, Biology & General Science</li>
+                </ul>
+
+                <h4 class="modal-subheading">Why Learn With Dr. J Tutors?</h4>
+                <ul class="modal-bullets">
+                    <li>🌟 Tailored 1-on-1 tutoring designed for your child's learning pace</li>
+                    <li>💻 Flexible online and physical (home) tutoring options</li>
+                    <li>🌍 Aligned with UK, US, Canadian, and Nigerian curriculums</li>
+                </ul>
+                <p class="modal-footnote">✨ Here's to academic excellence this school year!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20the%20Welcome%20Back%20to%20School%20tutoring%20package."
+        },
+        september: {
+            title: "Happy New Month - September Special",
+            image: "./flyer-september.jpg",
+            description: `
+                <p class="modal-intro">🗓️✨ <strong>Happy New Month! We Are Ready to Serve You Better in September!</strong></p>
+                <p>A new month brings fresh goals and new academic opportunities. Dr. J Tutors is <strong>just a booking away!</strong> whether your child needs help mastering challenging topics or getting ahead of their class syllabus.</p>
+                
+                <h4 class="modal-subheading">What We Offer:</h4>
+                <ul class="modal-bullets">
+                    <li>📚 Structured weekly & monthly tutoring programs</li>
+                    <li>📊 Comprehensive progress monitoring and parent feedback</li>
+                    <li>🎓 Dedicated tutors passionate about student success</li>
+                </ul>
+                <p class="modal-summary">Give your child the support they deserve this September!</p>
+                <p class="modal-footnote">📲 Just a booking away — contact us today!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20booking%20tutoring%20sessions%20for%20September."
+        },
         summer: {
             title: "Dr. J Summer Lessons",
             image: "./flyer-summer.jpg",
