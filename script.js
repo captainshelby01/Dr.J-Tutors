@@ -323,6 +323,154 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20Kiddies%20Maths%20Tutorials%20Package."
         },
+        term3_result: {
+            title: "3rd Term Result Support",
+            image: "./flyer-3rd-term-results.jpg",
+            description: `
+                <p class="modal-intro">📊 <strong>3rd Term Result Is Out! How Did Your Child Perform?</strong></p>
+                <p>Are you happy with their progress, or is it time for professional learning support? Give your child the academic boost they need by hiring Dr. J Tutors.</p>
+                <h4 class="modal-subheading">Key Highlights:</h4>
+                <ul class="modal-bullets">
+                    <li>🏫 Standard teachers for home and online lessons</li>
+                    <li>📈 Upscale academic performance across all grades</li>
+                    <li>🎓 Tailored strategies for exam preparation and subject mastery</li>
+                </ul>
+                <p class="modal-footnote">✨ We accept children from ALL GRADES!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%203rd%20Term%20result%20learning%20support%20for%20my%20child."
+        },
+        improvement: {
+            title: "Academic Improvement Program",
+            image: "./flyer-academic-improvement.jpg",
+            description: `
+                <p class="modal-intro">📉➡️📈 <strong>Has Your Child's Grades Been Declining?</strong></p>
+                <p>Now is the best time to step in before the gap widens! Enroll in our specialized <strong>Academic Improvement Program</strong>.</p>
+                <h4 class="modal-subheading">Why Parents Choose Us:</h4>
+                <ul class="modal-bullets">
+                    <li>👶 Kindergarten to Year 12 coverage</li>
+                    <li>🗓️ Flexible learning schedules & convenient payment plans</li>
+                    <li>🤝 Qualified tutors matched within 48 hours</li>
+                    <li>🌟 Intentional tutoring with proven academic strategies</li>
+                </ul>
+                <p class="modal-footnote">🎁 Enjoy a FREE TRIAL CLASS! Contact us today.</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20enroll%20my%20child%20in%20the%20Academic%20Improvement%20Program%20and%20claim%20a%20Free%20Trial%20Class."
+        },
+        scholarly_intl: {
+            title: "Scholarly International Tutor",
+            image: "./flyer-scholarly-intl.jpg",
+            description: `
+                <p class="modal-intro">🌍✈️ <strong>Get a Scholarly International Tutor for Your Kids!</strong></p>
+                <p>Global expertise for students everywhere. Whether you're in the 🇬🇧 UK, 🇺🇸 US, 🇨🇦 CANADA, or beyond, we provide expert virtual instruction tailored to your child's needs.</p>
+                <h4 class="modal-subheading">Experienced In:</h4>
+                <ul class="modal-bullets">
+                    <li>📚 Curriculum mastery for any country</li>
+                    <li>💡 Subject confidence booster (Maths, English, Sciences)</li>
+                    <li>📝 Special exam prep (SATs, GCSE, 11+ Exam)</li>
+                    <li>🗣️ Personal counseling session with your kids</li>
+                </ul>
+                <p class="modal-footnote">🎓 Personalized virtual/online tutoring for all levels!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20looking%20for%20a%20Scholarly%20International%20Tutor%20for%20my%20child."
+        },
+        improve_school: {
+            title: "Academic Boost for School",
+            image: "./flyer-academic-boost.jpg",
+            description: `
+                <p class="modal-intro">🎒💡 <strong>Help Your Child Improve in School!</strong></p>
+                <p>Get your child a <strong>Lesson Teacher</strong> for the academic boost needed. At Dr. J Tutors, we offer a wide range of expertise and experience to ensure your child excels.</p>
+                <h4 class="modal-subheading">Subjects Available:</h4>
+                <ul class="modal-bullets">
+                    <li>📐 Mathematics & Basic Science</li>
+                    <li>📖 English, Verbal & Quantitative Reasoning</li>
+                    <li>🔬 Physics, Chemistry, Biology</li>
+                    <li>💼 Economics, Government, Literature, Computer Studies</li>
+                </ul>
+                <p class="modal-footnote">✨ Home & online options available for all grades!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20want%20to%20get%20a%20lesson%20teacher%20for%20my%20child%20to%20improve%20in%20school."
+        },
+        meet_tutor: {
+            title: "Meet Your Tutor: Dr. Judith Ekemezie",
+            image: "./flyer-meet-your-tutor.jpg",
+            description: `
+                <p class="modal-intro">👩‍🏫⭐ <strong>Meet Your Tutor – Dr. Judith Ekemezie (CEO, Dr. J Tutors)</strong></p>
+                <p>Dedicated educator helping students excel in core subjects. I make complex topics simple, clear, and enjoyable through engaging lessons.</p>
+                <h4 class="modal-subheading">Teaching Experience & Expertise:</h4>
+                <ul class="modal-bullets">
+                    <li>⏱️ Over 6 years teaching Physics, Chemistry, Maths, Biology & English</li>
+                    <li>📝 Exam preparation specialist: WAEC, JAMB, IGCSE, GCSE, UK 11+</li>
+                    <li>💻 Uses writing tablet for seamless online classes</li>
+                    <li>🏠 Home & Online lessons (individual & group) for JSS1–SS3 & Year 7–Year 12</li>
+                </ul>
+                <p class="modal-footnote">🌟 Proven track record of improving grades and building student confidence!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20Judith%2C%20I%20saw%20your%20profile%20and%20would%20like%20to%20enquire%20about%20tutoring%20lessons."
+        },
+        welcome_3rd_term: {
+            title: "Welcome Back to School (3rd Term)",
+            image: "./flyer-welcome-3rd-term.jpg",
+            description: `
+                <p class="modal-intro">🏫🔔 <strong>Welcome Back to School – 3rd Term!</strong></p>
+                <p>Learning made easy! Prepare your child for top grades and full comprehension this 3rd term with Dr. J Tutors.</p>
+                <h4 class="modal-subheading">Program Highlights:</h4>
+                <ul class="modal-bullets">
+                    <li>📐 Mathematics, English & Science mastery</li>
+                    <li>📝 Intensive revision and past question drills</li>
+                    <li>💻 Interactive online and home physical tutoring</li>
+                </ul>
+                <p class="modal-footnote">✨ Dedicated tutoring designed for academic success!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%203rd%20Term%20tutoring%20lessons."
+        },
+        under_ctrl: {
+            title: "Academic Future Under Control",
+            image: "./flyer-under-ctrl.jpg",
+            description: `
+                <p class="modal-intro">⌨️🔒 <strong>Your Child's Academic Future is Under Control!</strong></p>
+                <p>Dear Parents, at Dr. J Tutors, we take charge of your child's learning journey with personalized care, structured study habits, and clear explanations.</p>
+                <h4 class="modal-subheading">Why Book With Us:</h4>
+                <ul class="modal-bullets">
+                    <li>🎯 Customized learning plan matching school curriculum</li>
+                    <li>📱 We are just a booking away on WhatsApp or Phone</li>
+                    <li>📈 Real-time monitoring and weekly parent feedback</li>
+                </ul>
+                <p class="modal-footnote">🚀 Take control of your child's success today!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20want%20to%20take%20control%20of%20my%20child%27s%20academic%20future."
+        },
+        term2_result: {
+            title: "2nd Term Result Support",
+            image: "./flyer-2nd-term-results.jpg",
+            description: `
+                <p class="modal-intro">📄 <strong>2nd Term Result Is Out. How Did Your Child Perform?</strong></p>
+                <p>Are you happy with their progress, or is it time for professional learning support?</p>
+                <h4 class="modal-subheading">How We Help:</h4>
+                <ul class="modal-bullets">
+                    <li>💡 Academic boost in weak subjects (Maths, Physics, Chemistry, English)</li>
+                    <li>🎓 Experienced tutors with success-proven strategies</li>
+                    <li>💻 Available for Home or Online lessons for all grades</li>
+                </ul>
+                <p class="modal-footnote">✨ Book us now to elevate your child's grades!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20book%20a%20consultation%20regarding%20my%20child%27s%202nd%20term%20results."
+        },
+        scholarly_intl_alt: {
+            title: "International Curriculum Mastery",
+            image: "./flyer-scholarly-intl-alt.jpg",
+            description: `
+                <p class="modal-intro">🌐🎓 <strong>International Curriculum Mastery</strong></p>
+                <p>Dedicated virtual instruction for international students preparing for GCSE, IGCSE, SATs, and 11+ Exams.</p>
+                <h4 class="modal-subheading">Specialized Features:</h4>
+                <ul class="modal-bullets">
+                    <li>🇬🇧 UK, 🇺🇸 US, and 🇨🇦 Canadian curriculum alignment</li>
+                    <li>1-on-1 virtual sessions with interactive digital whiteboard</li>
+                    <li>Targeted exam techniques and time management practice</li>
+                </ul>
+                <p class="modal-footnote">🌍 Global expertise for students everywhere!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20International%20Curriculum%20Mastery%20for%20my%20child."
+        },
         learn: {
             title: "Learn",
             image: "./mission-learn.png",
