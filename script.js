@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20the%20Welcome%20Back%20to%20School%20tutoring%20package."
         },
         september: {
-            title: "Happy New Month - September Special",
+            title: "Happy New Month (September)",
             image: "./flyer-september.jpg",
             description: `
                 <p class="modal-intro">🗓️✨ <strong>Happy New Month! We Are Ready to Serve You Better in September!</strong></p>
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20booking%20tutoring%20sessions%20for%20September."
         },
         summer: {
-            title: "Dr. J Summer Lessons",
+            title: "Dr. J Summer Lessons (Purple)",
             image: "./flyer-summer.jpg",
             description: `
                 <p class="modal-intro">☀️🚀 <strong>Give Your Child a Head Start with Dr. J Summer Lessons!</strong></p>
@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20booking%20a%20session%20for%20the%20Home%20%26%20Online%20Tutoring%20Package."
         },
         gcse: {
-            title: "IGCSE & GCSE Exam Prep",
+            title: "IGCSE / GCSE Online Tutor",
             image: "./flyer-gcse.png",
             description: `
                 <p class="modal-intro"><strong>IGCSE & GCSE doesn’t have to be difficult.</strong></p>
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20IGCSE%20%26%20GCSE%20Preparation%20Package."
         },
         maths: {
-            title: "Dr. J Kiddies Maths Tutorials",
+            title: "Is Your Child Struggling with Maths?",
             image: "./flyer-maths.jpg",
             description: `
                 <p class="modal-intro"><strong>Is your child struggling with Maths?</strong></p>
@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20Kiddies%20Maths%20Tutorials%20Package."
         },
         term3_result: {
-            title: "3rd Term Result Support",
+            title: "3rd Term Result Is Out",
             image: "./flyer-3rd-term-results.jpg",
             description: `
                 <p class="modal-intro">📊 <strong>3rd Term Result Is Out! How Did Your Child Perform?</strong></p>
@@ -340,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%203rd%20Term%20result%20learning%20support%20for%20my%20child."
         },
         improvement: {
-            title: "Academic Improvement Program",
+            title: "Has Your Child's Grades Been Declining?",
             image: "./flyer-academic-improvement.jpg",
             description: `
                 <p class="modal-intro">📉➡️📈 <strong>Has Your Child's Grades Been Declining?</strong></p>
@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20enroll%20my%20child%20in%20the%20Academic%20Improvement%20Program%20and%20claim%20a%20Free%20Trial%20Class."
         },
         scholarly_intl: {
-            title: "Scholarly International Tutor",
+            title: "Get a Scholarly International Tutor",
             image: "./flyer-scholarly-intl.jpg",
             description: `
                 <p class="modal-intro">🌍✈️ <strong>Get a Scholarly International Tutor for Your Kids!</strong></p>
@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20looking%20for%20a%20Scholarly%20International%20Tutor%20for%20my%20child."
         },
         improve_school: {
-            title: "Academic Boost for School",
+            title: "Help Your Child Improve in School",
             image: "./flyer-academic-boost.jpg",
             description: `
                 <p class="modal-intro">🎒💡 <strong>Help Your Child Improve in School!</strong></p>
@@ -391,7 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20want%20to%20get%20a%20lesson%20teacher%20for%20my%20child%20to%20improve%20in%20school."
         },
         meet_tutor: {
-            title: "Meet Your Tutor: Dr. Judith Ekemezie",
+            title: "Meet Our Tutor",
             image: "./flyer-meet-your-tutor.jpg",
             description: `
                 <p class="modal-intro">👩‍🏫⭐ <strong>Meet Your Tutor – Dr. Judith Ekemezie (CEO, Dr. J Tutors)</strong></p>
@@ -408,7 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20Judith%2C%20I%20saw%20your%20profile%20and%20would%20like%20to%20enquire%20about%20tutoring%20lessons."
         },
         welcome_3rd_term: {
-            title: "Welcome Back to School (3rd Term)",
+            title: "Dr. J Tutors Welcomes You Back to School",
             image: "./flyer-welcome-3rd-term.jpg",
             description: `
                 <p class="modal-intro">🏫🔔 <strong>Welcome Back to School – 3rd Term!</strong></p>
@@ -424,7 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%203rd%20Term%20tutoring%20lessons."
         },
         under_ctrl: {
-            title: "Academic Future Under Control",
+            title: "under CTRL",
             image: "./flyer-under-ctrl.jpg",
             description: `
                 <p class="modal-intro">⌨️🔒 <strong>Your Child's Academic Future is Under Control!</strong></p>
@@ -440,7 +440,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20want%20to%20take%20control%20of%20my%20child%27s%20academic%20future."
         },
         term2_result: {
-            title: "2nd Term Result Support",
+            title: "New Class, New Challenge",
             image: "./flyer-2nd-term-results.jpg",
             description: `
                 <p class="modal-intro">📄 <strong>2nd Term Result Is Out. How Did Your Child Perform?</strong></p>
@@ -456,10 +456,10 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20book%20a%20consultation%20regarding%20my%20child%27s%202nd%20term%20results."
         },
         scholarly_intl_alt: {
-            title: "International Curriculum Mastery",
+            title: "Unlock Your Child's Academic Potential",
             image: "./flyer-scholarly-intl-alt.jpg",
             description: `
-                <p class="modal-intro">🌐🎓 <strong>International Curriculum Mastery</strong></p>
+                <p class="modal-intro">🌐🎓 <strong>Unlock Your Child's Academic Potential</strong></p>
                 <p>Dedicated virtual instruction for international students preparing for GCSE, IGCSE, SATs, and 11+ Exams.</p>
                 <h4 class="modal-subheading">Specialized Features:</h4>
                 <ul class="modal-bullets">
