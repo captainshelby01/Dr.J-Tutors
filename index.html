@@ -63,9 +63,9 @@
                 <ul class="nav-list">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#offers" class="nav-link">Flyers & Offers</a></li>
+                    <li><a href="#offers" class="nav-link">Campaigns</a></li>
                     <li><a href="#videos" class="nav-link">Videos</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#faqs" class="nav-link">FAQs</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -134,7 +134,7 @@
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- 2. About Section: Meet The Founder -->
         <section id="about" class="about-section">
             <div class="container">
                 <div class="section-title-wrapper text-center">
@@ -169,38 +169,406 @@
                         <p>
                             Clients love working with us because of our professionalism, intentional tutoring methods, flexible learning options, and our genuine commitment to student improvement. We empower tutors by equipping them with the tools needed for effective online teaching, ensuring your child gets modern, top-tier instruction.
                         </p>
-                        <div class="about-mission">
-                            <h4>Our Simple Mission:</h4>
-                            <div class="mission-steps">
-                                <div class="step-card open-flyer-modal" data-flyer="learn" role="button" tabindex="0" aria-label="Learn details"><span class="step-num">1</span> <strong>Learn</strong></div>
-                                <div class="step-card open-flyer-modal" data-flyer="pass" role="button" tabindex="0" aria-label="Pass details"><span class="step-num">2</span> <strong>Pass</strong></div>
-                                <div class="step-card open-flyer-modal" data-flyer="excel" role="button" tabindex="0" aria-label="Excel details"><span class="step-num">3</span> <strong>Excel</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Our Simple Mission Section -->
+        <section id="mission" class="mission-section" style="padding: 4rem 0; background: var(--white); text-align: center;">
+            <div class="container">
+                <div class="section-title-wrapper text-center">
+                    <span class="subtitle">Our Goal</span>
+                    <h2>Our Simple Mission</h2>
+                    <div class="title-underline accent"></div>
+                </div>
+                <div class="mission-steps" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem;">
+                    <div class="step-card open-flyer-modal" data-flyer="learn" role="button" tabindex="0" aria-label="Learn details"><span class="step-num">1</span> <strong>Learn</strong></div>
+                    <div class="step-card open-flyer-modal" data-flyer="pass" role="button" tabindex="0" aria-label="Pass details"><span class="step-num">2</span> <strong>Pass</strong></div>
+                    <div class="step-card open-flyer-modal" data-flyer="excel" role="button" tabindex="0" aria-label="Excel details"><span class="step-num">3</span> <strong>Excel</strong></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Campaigns / Special Offers & Flyers Section -->
+        <section id="offers" class="offers-section">
+            <div class="container">
+                <div class="section-title-wrapper text-center">
+                    <span class="subtitle">Campaigns</span>
+                    <h2>Special Offers &amp; Tutoring Packages</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-description">Browse our current active flyers and program offers. Tap any card to open a direct WhatsApp inquiry for that specific service.</p>
+                </div>
+
+                <!-- Interactive Filters -->
+                <div class="gallery-filters" id="galleryFilters">
+                    <button class="filter-btn active" data-filter="all">All Packages</button>
+                    <button class="filter-btn" data-filter="general">General Tutoring</button>
+                    <button class="filter-btn" data-filter="intl">International / GCSE</button>
+                </div>
+
+                <!-- Flyers Grid -->
+                <div class="flyers-grid">
+                    <!-- 1. Home & Online Tutoring -->
+                    <div class="flyer-card" data-category="general">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-general.png" alt="Home & Online Tutoring Flyer" class="flyer-img">
+                            <span class="flyer-badge">Popular</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="general">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Home &amp; Online Tutoring</h3>
+                            <p class="flyer-details">Comprehensive home and online academic support tailored for UK, US, Canada, Nigeria, and international curriculums.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="general">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20booking%20a%20session%20for%20the%20Home%20%26%20Online%20Tutoring%20Package." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire</a>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Session Gallery Strip -->
-                <div class="session-gallery">
-                    <div class="session-gallery-label">
-                        <i class="bi bi-camera"></i>
-                        <span>Sessions in Action</span>
-                    </div>
-                    <div class="session-gallery-grid">
-                        <div class="session-gallery-item">
-                            <img src="./session-photo-1.jpg" alt="Student studying Maths with whiteboard notes at Dr. J Tutors" loading="lazy">
-                            <div class="session-gallery-caption">One-on-one home session: Maths &amp; Sciences</div>
+                    <!-- 2. Welcome Back to School -->
+                    <div class="flyer-card" data-category="general intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-back-to-school.jpg" alt="Welcome Back to School Flyer" class="flyer-img">
+                            <span class="flyer-badge accent">New Session</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="school">Quick View</button>
+                            </div>
                         </div>
-                        <div class="session-gallery-item">
-                            <img src="./session-photo-2.jpg" alt="Student working through Physics problems at Dr. J Tutors" loading="lazy">
-                            <div class="session-gallery-caption">Physics in session: real problem solving</div>
+                        <div class="flyer-content">
+                            <h3>Welcome Back to School!</h3>
+                            <p class="flyer-details">Here's to academic excellence! Home &amp; online tutoring structured to help your child excel in the new school year.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="school">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20the%20Welcome%20Back%20to%20School%20tutoring%20package." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Happy New Month (September) -->
+                    <div class="flyer-card" data-category="general">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-september.jpg" alt="Happy New Month September Flyer" class="flyer-img">
+                            <span class="flyer-badge">September</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="september">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Happy New Month! (September)</h3>
+                            <p class="flyer-details">We are ready to serve you better in September! Just a booking away from personalized tutoring for your child.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="september">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20booking%20tutoring%20sessions%20for%20September." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. 3rd Term Result Support -->
+                    <div class="flyer-card" data-category="general">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-3rd-term-results.jpg" alt="3rd Term Result Support Flyer" class="flyer-img">
+                            <span class="flyer-badge warning">3rd Term Result</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="term3_result">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>3rd Term Result Is Out</h3>
+                            <p class="flyer-details">3rd Term result is out! Are you happy with your child's performance or is it time for professional learning support? We accept all grades.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="term3_result">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%203rd%20Term%20result%20learning%20support%20for%20my%20child." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Dr. J Tutors Welcomes You Back to School -->
+                    <div class="flyer-card" data-category="general">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-welcome-3rd-term.jpg" alt="Welcome Back 3rd Term Flyer" class="flyer-img">
+                            <span class="flyer-badge">3rd Term</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="welcome_3rd_term">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Dr. J Tutors Welcomes You Back to School</h3>
+                            <p class="flyer-details">Learning made easy for the 3rd term! Structured lessons in Mathematics, English, and Science to ensure academic success.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="welcome_3rd_term">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%203rd%20Term%20tutoring%20lessons." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. New Class, New Challenge / 2nd Term Result Support -->
+                    <div class="flyer-card" data-category="general">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-2nd-term-results.jpg" alt="2nd Term Result Support Flyer" class="flyer-img">
+                            <span class="flyer-badge warning">Result Support</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="term2_result">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>New Class, New Challenge</h3>
+                            <p class="flyer-details">2nd Term result is out! Is it time for professional learning support? Give your child the academic boost they need with proven strategies.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="term2_result">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20book%20a%20consultation%20regarding%20my%20child%27s%202nd%20term%20results." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Which Child Will You Have This Term? -->
+                    <div class="flyer-card" data-category="general intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-which-child.jpg" alt="Which Child Will You Have This Term Flyer" class="flyer-img">
+                            <span class="flyer-badge accent">Parent Guide</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="which_child">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Which Child Will You Have This Term?</h3>
+                            <p class="flyer-details">Every child has the potential to do better. With the right guidance and personalized attention, your child can approach the new session with confidence.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="which_child">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20saw%20the%20%27Which%20child%20will%20you%20have%20this%20term%3F%27%20flyer%20and%20would%20like%20to%20get%20started." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. IGCSE / GCSE Online Tutor -->
+                    <div class="flyer-card" data-category="intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-gcse.png" alt="IGCSE & GCSE Online Tutoring Flyer" class="flyer-img">
+                            <span class="flyer-badge accent">IGCSE / GCSE</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="gcse">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>IGCSE / GCSE Online Tutor</h3>
+                            <p class="flyer-details">Expert online support to master concepts, build confidence, and achieve top grades in Maths, Sciences, and English.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="gcse">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20IGCSE%20%26%20GCSE%20Preparation%20Package." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. Is Your Child Struggling with Maths? -->
+                    <div class="flyer-card" data-category="general">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-maths.jpg" alt="Maths Tutoring Flyer" class="flyer-img">
+                            <span class="flyer-badge warning">Primary Maths</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="maths">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Is Your Child Struggling with Maths?</h3>
+                            <p class="flyer-details">Is your child struggling with Maths? Help them become a Maths genius with our interactive virtual and physical classes.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="maths">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20Kiddies%20Maths%20Tutorials%20Package." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10. Dr J Summer Lessons (Purple) -->
+                    <div class="flyer-card" data-category="general intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-summer.jpg" alt="Dr. J Summer Lessons Flyer" class="flyer-img">
+                            <span class="flyer-badge accent">Summer Special</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="summer">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Dr. J Summer Lessons (Purple)</h3>
+                            <p class="flyer-details">Give your child a head start with DSL! Home &amp; online tutoring structured to build confidence and prepare for the next academic session.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="summer">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20Summer%20Lessons%20Package." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 11. Get a Scholarly International Tutor -->
+                    <div class="flyer-card" data-category="intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-scholarly-intl.jpg" alt="Scholarly International Tutor Flyer" class="flyer-img">
+                            <span class="flyer-badge accent">UK / US / Canada</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="scholarly_intl">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Get a Scholarly International Tutor</h3>
+                            <p class="flyer-details">Global expertise for students in UK, US, Canada &amp; beyond. Master curriculum topics and prepare for SATs, GCSE, and 11+ Exams.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="scholarly_intl">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20looking%20for%20a%20Scholarly%20International%20Tutor%20for%20my%20child." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Register Child</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12. Has Your Child's Grades Been Declining? -->
+                    <div class="flyer-card" data-category="general intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-academic-improvement.jpg" alt="Academic Improvement Program Flyer" class="flyer-img">
+                            <span class="flyer-badge accent">Free Trial Class</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="improvement">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Has Your Child's Grades Been Declining?</h3>
+                            <p class="flyer-details">Step in before the gap widens with our structured tutoring (Kindergarten to Year 12). Enjoy a Free Trial Class!</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="improvement">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20enroll%20my%20child%20in%20the%20Academic%20Improvement%20Program%20and%20claim%20a%20Free%20Trial%20Class." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Claim Free Trial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 13. Meet Our Tutor -->
+                    <div class="flyer-card" data-category="general intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-meet-your-tutor.jpg" alt="Meet Your Tutor Dr. Judith Flyer" class="flyer-img">
+                            <span class="flyer-badge">Founder Profile</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="meet_tutor">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Meet Our Tutor</h3>
+                            <p class="flyer-details">Founder &amp; CEO of Dr. J Tutors with 6+ years experience in Physics, Chemistry, Maths, Biology &amp; English. WAEC, JAMB, IGCSE &amp; GCSE specialist.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="meet_tutor">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20Judith%2C%20I%20saw%20your%20profile%20and%20would%20like%20to%20enquire%20about%20tutoring%20lessons." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Contact Dr. J</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 14. under CTRL -->
+                    <div class="flyer-card" data-category="general">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-under-ctrl.jpg" alt="Academic Future Under Control Flyer" class="flyer-img">
+                            <span class="flyer-badge">Parent Guide</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="under_ctrl">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>under CTRL</h3>
+                            <p class="flyer-details">Dear Parents, the future of your child's academics is under control with Dr. J Tutors. We are just a booking away!</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="under_ctrl">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20want%20to%20take%20control%20of%20my%20child%27s%20academic%20future." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Session</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 15. Help Your Child Improve in School -->
+                    <div class="flyer-card" data-category="general">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-academic-boost.jpg" alt="Help Your Child Improve in School Flyer" class="flyer-img">
+                            <span class="flyer-badge">All Subjects</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="improve_school">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Help Your Child Improve in School</h3>
+                            <p class="flyer-details">Get your child a dedicated lesson teacher for Maths, Sciences, English, and Reasoning to ensure they excel across all grades.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="improve_school">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20want%20to%20get%20a%20lesson%20teacher%20for%20my%20child%20to%20improve%20in%20school." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 16. Unlock Your Child's Academic Potential -->
+                    <div class="flyer-card" data-category="intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-scholarly-intl-alt.jpg" alt="Unlock Your Child's Academic Potential Flyer" class="flyer-img">
+                            <span class="flyer-badge accent">Global Tutoring</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="scholarly_intl_alt">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Unlock Your Child’s Academic Potential</h3>
+                            <p class="flyer-details">Personalized virtual tutoring for UK, US, and Canadian curricula. Dedicated instruction tailored to your child's specific learning pace.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="scholarly_intl_alt">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20International%20Curriculum%20Mastery%20for%20my%20child." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Get Started</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services Section -->
+        <!-- 5. See Us in Action Section (Video Gallery) -->
+        <section id="videos" class="videos-section">
+            <div class="container">
+                <div class="section-title-wrapper text-center">
+                    <span class="subtitle">See Us in Action</span>
+                    <h2>Lesson Previews &amp; Student Showcases</h2>
+                    <div class="title-underline accent"></div>
+                    <p class="section-description">We believe in transparent learning. Watch sample video lessons and tutor introductory videos to see how we deliver lessons.</p>
+                </div>
+
+                <div class="video-grid">
+                    <!-- Video Card 1 -->
+                    <div class="video-card">
+                        <div class="video-embed-container">
+                            <iframe src="https://www.youtube.com/embed/zZyBdjsbLK0" title="Master Physics &amp; Chemistry with Dr. J" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Master Physics &amp; Chemistry with Dr. J</h3>
+                            <p>Learn how we structure our home and online tutoring packages to help students excel in core sciences.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div class="video-card">
+                        <div class="video-embed-container">
+                            <iframe src="https://www.youtube.com/embed/sMig4C_TU40" title="2026 JAMB Physics Revision" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>2026 JAMB Physics Revision</h3>
+                            <p>A sample exam preparation session covering high-yield physics questions and resistor circuit problems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. What We Offer Section -->
         <section id="services" class="services-section">
             <!-- Playful top wave curve -->
             <div class="wave-divider-top">
@@ -237,7 +605,7 @@
                     <!-- Service 3 -->
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-globe-europe-africa"></i></div>
-                        <h3>GCSE & IGCSE Prep</h3>
+                        <h3>GCSE &amp; IGCSE Prep</h3>
                         <p>Expert preparation across major exam boards (AQA, Edexcel, Cambridge) for high-scoring results.</p>
                         <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20GCSE%20and%20IGCSE%20preparation." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
                     </div>
@@ -253,7 +621,7 @@
                     <!-- Service 5 -->
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-journal-check"></i></div>
-                        <h3>WAEC, NECO & JAMB</h3>
+                        <h3>WAEC, NECO &amp; JAMB</h3>
                         <p>Intensive exam-focused prep classes and past question practice tailored for outstanding success in Nigerian exams.</p>
                         <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20WAEC%2C%20NECO%2C%20and%20JAMB%20classes." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
                     </div>
@@ -293,7 +661,7 @@
                     <!-- Service 10 -->
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-mortarboard"></i></div>
-                        <h3>SAT, A-Levels & SATs</h3>
+                        <h3>SAT, A-Levels &amp; SATs</h3>
                         <p>Rigorous tutoring schedules targeting competitive entrance scores for universities and secondary colleges.</p>
                         <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20SAT%20and%20A-Level%20prep." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
                     </div>
@@ -329,7 +697,7 @@
             </div>
         </section>
 
-        <!-- Curricula We Cover Section -->
+        <!-- 7. Our Reach Section (Curricula We Cover) -->
         <section id="curricula" class="curricula-section">
             <div class="container">
                 <div class="section-title-wrapper text-center">
@@ -441,409 +809,7 @@
             </div>
         </section>
 
-        <!-- Parent Portal & Study Tracker Demo -->
-        <section id="tracker-demo" class="tracker-section">
-            <div class="container">
-                <div class="section-title-wrapper text-center">
-                    <span class="subtitle">Parent Transparency Portal</span>
-                    <h2>Personalized Study & Reading Tracker</h2>
-                    <div class="title-underline accent"></div>
-                    <p class="section-description">We provide parents with a personalized study and reading tracking system to monitor their child's daily study progress and reading habits.</p>
-                </div>
-
-                <div class="tracker-widget-simple">
-                    <!-- Two Sheets Side by Side -->
-                    <div class="tracker-sheets-grid">
-                        <!-- Sheet 1: Monthly Reading Report -->
-                        <div class="tracker-sheet-card">
-                            <h3>1. Monthly Reading Report</h3>
-                            <div class="template-image-container">
-                                <img src="study-tracker-page-1.png" alt="Monthly Reading Report">
-                            </div>
-                        </div>
-
-                        <!-- Sheet 2: Monthly Study Graph -->
-                        <div class="tracker-sheet-card">
-                            <h3>2. Monthly Study Graph</h3>
-                            <div class="template-image-container">
-                                <img src="study-tracker-page-2.png" alt="Monthly Study Graph">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Print & Download Buttons -->
-                    <div class="tracker-actions-bar">
-                        <a href="study-tracker.pdf" download class="btn btn-secondary btn-outline">
-                            📥 Download Study Tracker PDF
-                        </a>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20getting%20a%20personalized%20study%20progress%20tracker%20for%20my%20child." 
-                           id="trackerWhatsAppCTA" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                            💬 Enquire on WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery / Flyers & Special Offers -->
-        <section id="offers" class="offers-section">
-            <div class="container">
-                <div class="section-title-wrapper text-center">
-                    <span class="subtitle">Campaigns</span>
-                    <h2>Special Offers & Tutoring Packages</h2>
-                    <div class="title-underline"></div>
-                    <p class="section-description">Browse our current active flyers and program offers. Tap any card to open a direct WhatsApp inquiry for that specific service.</p>
-                </div>
-
-                <!-- Interactive Filters -->
-                <div class="gallery-filters" id="galleryFilters">
-                    <button class="filter-btn active" data-filter="all">All Packages</button>
-                    <button class="filter-btn" data-filter="general">General Tutoring</button>
-                    <button class="filter-btn" data-filter="intl">International / GCSE</button>
-                </div>
-
-                <!-- Flyers Grid -->
-                <div class="flyers-grid">
-                    <!-- 1. Home & Online Tutoring -->
-                    <div class="flyer-card" data-category="general">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-general.png" alt="Home & Online Tutoring Flyer" class="flyer-img">
-                            <span class="flyer-badge">Popular</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="general">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Home & Online Tutoring</h3>
-                            <p class="flyer-details">Comprehensive home and online academic support tailored for UK, US, Canada, Nigeria, and international curriculums.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="general">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20booking%20a%20session%20for%20the%20Home%20%26%20Online%20Tutoring%20Package." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2. Welcome Back to School -->
-                    <div class="flyer-card" data-category="general intl">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-back-to-school.jpg" alt="Welcome Back to School Flyer" class="flyer-img">
-                            <span class="flyer-badge accent">New Session</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="school">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Welcome Back to School!</h3>
-                            <p class="flyer-details">Here's to academic excellence! Home & online tutoring structured to help your child excel in the new school year.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="school">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20the%20Welcome%20Back%20to%20School%20tutoring%20package." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3. Happy New Month (September) -->
-                    <div class="flyer-card" data-category="general">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-september.jpg" alt="Happy New Month September Flyer" class="flyer-img">
-                            <span class="flyer-badge">September</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="september">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Happy New Month! (September)</h3>
-                            <p class="flyer-details">We are ready to serve you better in September! Just a booking away from personalized tutoring for your child.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="september">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20booking%20tutoring%20sessions%20for%20September." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4. 3rd Term Result Support -->
-                    <div class="flyer-card" data-category="general">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-3rd-term-results.jpg" alt="3rd Term Result Support Flyer" class="flyer-img">
-                            <span class="flyer-badge warning">3rd Term Result</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="term3_result">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>3rd Term Result Is Out</h3>
-                            <p class="flyer-details">3rd Term result is out! Are you happy with your child's performance or is it time for professional learning support? We accept all grades.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="term3_result">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%203rd%20Term%20result%20learning%20support%20for%20my%20child." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 5. Dr. J Tutors Welcomes You Back to School -->
-                    <div class="flyer-card" data-category="general">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-welcome-3rd-term.jpg" alt="Welcome Back 3rd Term Flyer" class="flyer-img">
-                            <span class="flyer-badge">3rd Term</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="welcome_3rd_term">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Dr. J Tutors Welcomes You Back to School</h3>
-                            <p class="flyer-details">Learning made easy for the 3rd term! Structured lessons in Mathematics, English, and Science to ensure academic success.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="welcome_3rd_term">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%203rd%20Term%20tutoring%20lessons." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 6. New Class, New Challenge / 2nd Term Result Support -->
-                    <div class="flyer-card" data-category="general">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-2nd-term-results.jpg" alt="2nd Term Result Support Flyer" class="flyer-img">
-                            <span class="flyer-badge warning">Result Support</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="term2_result">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>New Class, New Challenge</h3>
-                            <p class="flyer-details">2nd Term result is out! Is it time for professional learning support? Give your child the academic boost they need with proven strategies.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="term2_result">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20book%20a%20consultation%20regarding%20my%20child%27s%202nd%20term%20results." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 7. IGCSE / GCSE Online Tutor -->
-                    <div class="flyer-card" data-category="intl">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-gcse.png" alt="IGCSE & GCSE Online Tutoring Flyer" class="flyer-img">
-                            <span class="flyer-badge accent">IGCSE / GCSE</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="gcse">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>IGCSE / GCSE Online Tutor</h3>
-                            <p class="flyer-details">Expert online support to master concepts, build confidence, and achieve top grades in Maths, Sciences, and English.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="gcse">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20IGCSE%20%26%20GCSE%20Preparation%20Package." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 8. Is Your Child Struggling with Maths? -->
-                    <div class="flyer-card" data-category="general">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-maths.jpg" alt="Maths Tutoring Flyer" class="flyer-img">
-                            <span class="flyer-badge warning">Primary Maths</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="maths">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Is Your Child Struggling with Maths?</h3>
-                            <p class="flyer-details">Is your child struggling with Maths? Help them become a Maths genius with our interactive virtual and physical classes.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="maths">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20Kiddies%20Maths%20Tutorials%20Package." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 9. Dr J Summer Lessons (Purple) -->
-                    <div class="flyer-card" data-category="general intl">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-summer.jpg" alt="Dr. J Summer Lessons Flyer" class="flyer-img">
-                            <span class="flyer-badge accent">Summer Special</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="summer">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Dr. J Summer Lessons (Purple)</h3>
-                            <p class="flyer-details">Give your child a head start with DSL! Home & online tutoring structured to build confidence and prepare for the next academic session.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="summer">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20my%20child%20in%20the%20Summer%20Lessons%20Package." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 10. Get a Scholarly International Tutor -->
-                    <div class="flyer-card" data-category="intl">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-scholarly-intl.jpg" alt="Scholarly International Tutor Flyer" class="flyer-img">
-                            <span class="flyer-badge accent">UK / US / Canada</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="scholarly_intl">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Get a Scholarly International Tutor</h3>
-                            <p class="flyer-details">Global expertise for students in UK, US, Canada & beyond. Master curriculum topics and prepare for SATs, GCSE, and 11+ Exams.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="scholarly_intl">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20looking%20for%20a%20Scholarly%20International%20Tutor%20for%20my%20child." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Register Child</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 11. Has Your Child's Grades Been Declining? -->
-                    <div class="flyer-card" data-category="general intl">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-academic-improvement.jpg" alt="Academic Improvement Program Flyer" class="flyer-img">
-                            <span class="flyer-badge accent">Free Trial Class</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="improvement">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Has Your Child's Grades Been Declining?</h3>
-                            <p class="flyer-details">Step in before the gap widens with our structured tutoring (Kindergarten to Year 12). Enjoy a Free Trial Class!</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="improvement">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20enroll%20my%20child%20in%20the%20Academic%20Improvement%20Program%20and%20claim%20a%20Free%20Trial%20Class." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Claim Free Trial</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 12. Meet Our Tutor -->
-                    <div class="flyer-card" data-category="general intl">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-meet-your-tutor.jpg" alt="Meet Your Tutor Dr. Judith Flyer" class="flyer-img">
-                            <span class="flyer-badge">Founder Profile</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="meet_tutor">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Meet Our Tutor</h3>
-                            <p class="flyer-details">Founder & CEO of Dr. J Tutors with 6+ years experience in Physics, Chemistry, Maths, Biology & English. WAEC, JAMB, IGCSE & GCSE specialist.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="meet_tutor">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20Judith%2C%20I%20saw%20your%20profile%20and%20would%20like%20to%20enquire%20about%20tutoring%20lessons." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Contact Dr. J</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 13. under CTRL -->
-                    <div class="flyer-card" data-category="general">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-under-ctrl.jpg" alt="Academic Future Under Control Flyer" class="flyer-img">
-                            <span class="flyer-badge">Parent Guide</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="under_ctrl">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>under CTRL</h3>
-                            <p class="flyer-details">Dear Parents, the future of your child's academics is under control with Dr. J Tutors. We are just a booking away!</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="under_ctrl">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20want%20to%20take%20control%20of%20my%20child%27s%20academic%20future." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Session</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 14. Help Your Child Improve in School -->
-                    <div class="flyer-card" data-category="general">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-academic-boost.jpg" alt="Help Your Child Improve in School Flyer" class="flyer-img">
-                            <span class="flyer-badge">All Subjects</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="improve_school">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Help Your Child Improve in School</h3>
-                            <p class="flyer-details">Get your child a dedicated lesson teacher for Maths, Sciences, English, and Reasoning to ensure they excel across all grades.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="improve_school">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20want%20to%20get%20a%20lesson%20teacher%20for%20my%20child%20to%20improve%20in%20school." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enroll Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 15. Unlock Your Child's Academic Potential -->
-                    <div class="flyer-card" data-category="intl">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-scholarly-intl-alt.jpg" alt="Unlock Your Child's Academic Potential Flyer" class="flyer-img">
-                            <span class="flyer-badge accent">Global Tutoring</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="scholarly_intl_alt">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Unlock Your Child’s Academic Potential</h3>
-                            <p class="flyer-details">Personalized virtual tutoring for UK, US, and Canadian curricula. Dedicated instruction tailored to your child's specific learning pace.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="scholarly_intl_alt">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20International%20Curriculum%20Mastery%20for%20my%20child." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Video Gallery (Placeholder YouTube embed section) -->
-        <section id="videos" class="videos-section">
-            <div class="container">
-                <div class="section-title-wrapper text-center">
-                    <span class="subtitle">See Us in Action</span>
-                    <h2>Lesson Previews & Student Showcases</h2>
-                    <div class="title-underline accent"></div>
-                    <p class="section-description">We believe in transparent learning. Watch sample video lessons and tutor introductory videos to see how we deliver lessons.</p>
-                </div>
-
-                <div class="video-grid">
-                    <!-- Video Card 1 -->
-                    <div class="video-card">
-                        <div class="video-embed-container">
-                            <iframe src="https://www.youtube.com/embed/zZyBdjsbLK0" title="Master Physics & Chemistry with Dr. J" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Master Physics & Chemistry with Dr. J</h3>
-                            <p>Learn how we structure our home and online tutoring packages to help students excel in core sciences.</p>
-                        </div>
-                    </div>
-
-                    <!-- Video Card 2 -->
-                    <div class="video-card">
-                        <div class="video-embed-container">
-                            <iframe src="https://www.youtube.com/embed/sMig4C_TU40" title="2026 JAMB Physics Revision" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>2026 JAMB Physics Revision</h3>
-                            <p>A sample exam preparation session covering high-yield physics questions and resistor circuit problems.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
+        <!-- 8. Testimonials Section -->
         <section id="testimonials" class="testimonials-section">
             <div class="container">
                 <div class="section-title-wrapper text-center">
@@ -888,7 +854,7 @@
                             <!-- Testimonial 5 -->
                             <div class="testimonial-slide">
                                 <div class="testimonial-image-card">
-                                    <img src="reviews/review-whatsapp-5.jpg" alt="Student Review Screenshot - Payment & Feedback" class="testimonial-screenshot">
+                                    <img src="reviews/review-whatsapp-5.jpg" alt="Student Review Screenshot - Payment &amp; Feedback" class="testimonial-screenshot">
                                 </div>
                             </div>
 
@@ -927,6 +893,71 @@
 
                 <div class="carousel-dots" id="carouselDots">
                     <!-- Dots will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Sessions in Action Section -->
+        <section id="sessions-action" class="sessions-section" style="padding: 4rem 0; background: var(--neutral-light);">
+            <div class="container">
+                <div class="section-title-wrapper text-center">
+                    <span class="subtitle">Live Classroom Highlights</span>
+                    <h2>Sessions in Action</h2>
+                    <div class="title-underline accent"></div>
+                </div>
+                <div class="session-gallery-grid">
+                    <div class="session-gallery-item">
+                        <img src="./session-photo-1.jpg" alt="Student studying Maths with whiteboard notes at Dr. J Tutors" loading="lazy">
+                        <div class="session-gallery-caption">One-on-one home session: Maths &amp; Sciences</div>
+                    </div>
+                    <div class="session-gallery-item">
+                        <img src="./session-photo-2.jpg" alt="Student working through Physics problems at Dr. J Tutors" loading="lazy">
+                        <div class="session-gallery-caption">Physics in session: real problem solving</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Parent Transparency Portal Section -->
+        <section id="tracker-demo" class="tracker-section">
+            <div class="container">
+                <div class="section-title-wrapper text-center">
+                    <span class="subtitle">Parent Transparency Portal</span>
+                    <h2>Personalized Study &amp; Reading Tracker</h2>
+                    <div class="title-underline accent"></div>
+                    <p class="section-description">We provide parents with a personalized study and reading tracking system to monitor their child's daily study progress and reading habits.</p>
+                </div>
+
+                <div class="tracker-widget-simple">
+                    <!-- Two Sheets Side by Side -->
+                    <div class="tracker-sheets-grid">
+                        <!-- Sheet 1: Monthly Reading Report -->
+                        <div class="tracker-sheet-card">
+                            <h3>1. Monthly Reading Report</h3>
+                            <div class="template-image-container">
+                                <img src="study-tracker-page-1.png" alt="Monthly Reading Report">
+                            </div>
+                        </div>
+
+                        <!-- Sheet 2: Monthly Study Graph -->
+                        <div class="tracker-sheet-card">
+                            <h3>2. Monthly Study Graph</h3>
+                            <div class="template-image-container">
+                                <img src="study-tracker-page-2.png" alt="Monthly Study Graph">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Print & Download Buttons -->
+                    <div class="tracker-actions-bar">
+                        <a href="study-tracker.pdf" download class="btn btn-secondary btn-outline">
+                            📥 Download Study Tracker PDF
+                        </a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20getting%20a%20personalized%20study%20progress%20tracker%20for%20my%20child." 
+                           id="trackerWhatsAppCTA" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            💬 Enquire on WhatsApp
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

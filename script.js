@@ -455,6 +455,23 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20book%20a%20consultation%20regarding%20my%20child%27s%202nd%20term%20results."
         },
+        which_child: {
+            title: "Which Child Will You Have This Term?",
+            image: "./flyer-which-child.jpg",
+            description: `
+                <p class="modal-intro">🤔❓ <strong>Which Child Will You Have This Term?</strong></p>
+                <p>Will your child be <em>the one who struggles to keep up</em>, or <em>the one who stays ahead</em>?</p>
+                <p>Every child has the potential to do better. With the right guidance, personalised attention, and consistent support, your child can approach the new session with greater confidence and improved performance.</p>
+                <h4 class="modal-subheading">Why Work With Dr. J Tutors?</h4>
+                <ul class="modal-bullets">
+                    <li>🌟 Tailored 1-on-1 attention for every student</li>
+                    <li>📚 Personalised learning strategies matching syllabus demands</li>
+                    <li>📈 Consistent progress tracking and parent updates</li>
+                </ul>
+                <p class="modal-footnote">📩 Contact us now to get started!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20saw%20the%20%27Which%20child%20will%20you%20have%20this%20term%3F%27%20flyer%20and%20would%20like%20to%20get%20started."
+        },
         scholarly_intl_alt: {
             title: "Unlock Your Child's Academic Potential",
             image: "./flyer-scholarly-intl-alt.jpg",
