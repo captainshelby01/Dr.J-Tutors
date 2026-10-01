@@ -210,6 +210,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const openModalBtns = document.querySelectorAll('.open-flyer-modal');
 
     const flyerData = {
+        independence: {
+            title: "Happy Independence Day & New Month!",
+            image: "./flyer-independence-day.jpg",
+            description: `
+                <p class="modal-intro">🇳🇬🎉 <strong>Happy Independence Day &amp; Happy New Month!</strong></p>
+                <p>As Nigeria celebrates Independence Day on October 1st, Dr. J Tutors wishes every learner and family wisdom, growth, favour, and academic success!</p>
+                
+                <h4 class="modal-subheading">Core Tutoring Services:</h4>
+                <ul class="modal-bullets">
+                    <li>📐 <strong>Mathematics, English &amp; Sciences:</strong> Solid concept mastery and exam confidence</li>
+                    <li>🌍 <strong>Curriculum Support:</strong> Nigerian, UK, US, and Canadian syllabuses</li>
+                    <li>💻 <strong>Home &amp; Online Classes:</strong> Flexible 1-on-1 personalized sessions</li>
+                    <li>📝 <strong>Exam Preparation:</strong> WAEC, NECO, JAMB, GCSE, IGCSE &amp; Common Entrance</li>
+                </ul>
+
+                <h4 class="modal-subheading">Why Learn With Dr. J Tutors?</h4>
+                <ul class="modal-bullets">
+                    <li>🌟 Tailored lessons matching your child's learning pace</li>
+                    <li>📈 Proven track record of boosting grades and building confidence</li>
+                    <li>📱 Quick tutor matching and dedicated support</li>
+                </ul>
+                <p class="modal-footnote">✨ May this new month bring wisdom, growth, favour &amp; success to every learner &amp; family!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20Happy%20Independence%20Day!%20I%27m%20interested%20in%20booking%20tutoring%20sessions%20for%20my%20child."
+        },
         school: {
             title: "Welcome Back to School!",
             image: "./flyer-back-to-school.jpg",
