@@ -51,6 +51,20 @@
 </head>
 <body>
 
+    <!-- Homepage JAMB Announcement Banner -->
+    <!-- Homepage JAMB Announcement Banner -->
+    <aside class="jamb-announcement-banner" aria-label="JAMB 2027 Registration Announcement">
+        <div class="container jamb-banner-inner">
+            <span class="jamb-banner-badge"><i class="bi bi-fire" style="margin-right: 0.35rem;"></i>JAMB 2027</span>
+            <span class="jamb-banner-text">
+                <i class="bi bi-megaphone-fill" style="color: #ffdd57; margin-right: 0.35rem;"></i> Interested in <strong>JAMB 2027 Registration &amp; 300+ Intensive Classes</strong>? Classes resume November 2026!
+            </span>
+            <a href="./jamb" class="jamb-banner-cta">
+                Register Now <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </aside>
+
     <!-- Header Navigation -->
     <header class="site-header">
         <div class="container header-container">
@@ -76,7 +90,7 @@
                    class="btn btn-primary nav-cta-btn" 
                    target="_blank" 
                    rel="noopener noreferrer">
-                    Enrol Now
+                    <i class="bi bi-whatsapp" style="margin-right: 0.35rem;"></i> Enrol Now
                 </a>
                 <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
                     <span class="bar"></span>
@@ -92,14 +106,19 @@
         <section id="home" class="hero-section">
             <div class="container hero-container">
                 <div class="hero-content">
-                    <div class="badge-tag">🎓 Learn. Pass. Excel.</div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 1rem;">
+                        <div class="badge-tag" style="margin-bottom: 0;"><i class="bi bi-mortarboard-fill" style="margin-right: 0.35rem; color: var(--secondary);"></i> Learn. Pass. Excel.</div>
+                        <a href="./jamb" class="badge-tag" style="margin-bottom: 0; background: var(--secondary-light); color: var(--secondary); text-decoration: none; border: 1.5px solid var(--secondary); font-weight: 700; transition: all 0.2s ease;">
+                            <i class="bi bi-fire" style="color: #ef4444; margin-right: 0.35rem;"></i> Interested in JAMB 2027 Registration? <i class="bi bi-arrow-right" style="margin-left: 0.3rem;"></i>
+                        </a>
+                    </div>
                     <h1>Unlock Your Child's Academic Potential!</h1>
                     <p class="hero-subtitle">
                         Personalised tutoring across all levels &amp; countries. From Primary 1–6 (Nigeria) · Year 1–6 (UK) · Grade 1–6 (US) through to JSS1–SS3 (Nigeria) · Year 7–12 (UK) · Grade 7–12 (US). We cover every curriculum with structured plans and expert tutors.
                     </p>
                     <div class="hero-actions-group">
-                        <a href="#contact" class="btn btn-primary btn-large">Get Started Today</a>
-                        <a href="#services" class="btn btn-secondary btn-large">Explore Services</a>
+                        <a href="#contact" class="btn btn-primary btn-large"><i class="bi bi-send-fill" style="margin-right: 0.35rem;"></i> Get Started Today</a>
+                        <a href="#services" class="btn btn-secondary btn-large"><i class="bi bi-grid-fill" style="margin-right: 0.35rem;"></i> Explore Services</a>
                     </div>
                     <div class="hero-stats">
                         <div class="stat-item">
@@ -175,17 +194,40 @@
         </section>
 
         <!-- 3. Our Simple Mission Section -->
-        <section id="mission" class="mission-section" style="padding: 4rem 0; background: var(--white); text-align: center;">
+        <section id="mission" class="mission-section" style="padding: 5rem 0; background: var(--white); text-align: center;">
             <div class="container">
                 <div class="section-title-wrapper text-center">
                     <span class="subtitle">Our Goal</span>
                     <h2>Our Simple Mission</h2>
                     <div class="title-underline accent"></div>
+                    <p class="section-description" style="max-width: 680px; margin: 0 auto; color: #4b5563;">
+                        A proven, 3-step learning pathway designed to guide students from foundational understanding to outstanding academic success.
+                    </p>
                 </div>
-                <div class="mission-steps" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem;">
-                    <div class="step-card open-flyer-modal" data-flyer="learn" role="button" tabindex="0" aria-label="Learn details"><span class="step-num">1</span> <strong>Learn</strong></div>
-                    <div class="step-card open-flyer-modal" data-flyer="pass" role="button" tabindex="0" aria-label="Pass details"><span class="step-num">2</span> <strong>Pass</strong></div>
-                    <div class="step-card open-flyer-modal" data-flyer="excel" role="button" tabindex="0" aria-label="Excel details"><span class="step-num">3</span> <strong>Excel</strong></div>
+                <div class="mission-steps">
+                    <!-- Step 1: Learn -->
+                    <div class="step-card open-flyer-modal" data-flyer="learn" role="button" tabindex="0" aria-label="Learn details">
+                        <span class="step-num">1</span>
+                        <h3 class="step-title">Learn</h3>
+                        <p class="step-desc">Master core concepts, demystify difficult topics, and learn at your child's pace with personalized 1-on-1 guidance.</p>
+                        <span class="step-action">Explore Details <i class="bi bi-arrow-right"></i></span>
+                    </div>
+
+                    <!-- Step 2: Pass -->
+                    <div class="step-card open-flyer-modal" data-flyer="pass" role="button" tabindex="0" aria-label="Pass details">
+                        <span class="step-num">2</span>
+                        <h3 class="step-title">Pass</h3>
+                        <p class="step-desc">Acquire exam-tested shortcuts, practice CBT questions, and build the confidence needed to ace WAEC, JAMB, GCSE &amp; more.</p>
+                        <span class="step-action">Explore Details <i class="bi bi-arrow-right"></i></span>
+                    </div>
+
+                    <!-- Step 3: Excel -->
+                    <div class="step-card open-flyer-modal" data-flyer="excel" role="button" tabindex="0" aria-label="Excel details">
+                        <span class="step-num">3</span>
+                        <h3 class="step-title">Excel</h3>
+                        <p class="step-desc">Build lifelong academic habits, gain entrance to top schools and universities, and graduate at the top of your class.</p>
+                        <span class="step-action">Explore Details <i class="bi bi-arrow-right"></i></span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -202,14 +244,115 @@
 
                 <!-- Interactive Filters -->
                 <div class="gallery-filters" id="galleryFilters">
-                    <button class="filter-btn active" data-filter="all">All Packages</button>
-                    <button class="filter-btn" data-filter="general">General Tutoring</button>
-                    <button class="filter-btn" data-filter="intl">International / GCSE</button>
+                    <button class="filter-btn active" data-filter="all"><i class="bi bi-grid-fill" style="margin-right: 0.3rem;"></i> All Packages</button>
+                    <button class="filter-btn" data-filter="general"><i class="bi bi-mortarboard-fill" style="margin-right: 0.3rem;"></i> General Tutoring</button>
+                    <button class="filter-btn" data-filter="intl"><i class="bi bi-globe" style="margin-right: 0.3rem;"></i> International / GCSE</button>
                 </div>
 
                 <!-- Flyers Grid -->
                 <div class="flyers-grid">
-                    <!-- 1. Happy Independence Day / New Month -->
+                    <!-- 1. Score 300+ in UTME (JAMB Registration Entry Point) -->
+                    <div class="flyer-card" data-category="general">
+                        <div class="flyer-img-container">
+                            <a href="./jamb" aria-label="Visit Dedicated JAMB 2027 Registration Page" style="display: block; width: 100%; height: 100%;">
+                                <img src="./flyer-score-300-utme.jpg" alt="Score 300+ in UTME Flyer - Dr. J Tutors" class="flyer-img">
+                            </a>
+                            <span class="flyer-badge accent">Registration Ongoing</span>
+                            <div class="flyer-hover-overlay">
+                                <a href="./jamb" class="btn btn-primary" style="text-decoration: none;">Register on JAMB Page <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Score 300+ in UTME (JAMB 2027)</h3>
+                            <p class="flyer-details">🚨🎉 JAMB 2027 Registration is ongoing! Classes resume in November 2026. Start preparing early with structured JAMB preparation and experienced tutors.</p>
+                            <div class="flyer-buttons-group">
+                                <a href="./jamb" class="btn btn-primary btn-sm" style="text-decoration: none;">Register Now <i class="bi bi-arrow-right"></i></a>
+                                <a href="./jamb" class="btn btn-secondary btn-sm" style="text-decoration: none;"><i class="bi bi-info-circle" style="margin-right: 0.25rem;"></i> View JAMB Page</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Not in Nigeria? You've Got No Problem! -->
+                    <div class="flyer-card" data-category="general intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-not-in-nigeria.jpg" alt="Not in Nigeria Online Tutoring Flyer - Dr. J Tutors" class="flyer-img">
+                            <span class="flyer-badge accent">Worldwide</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="not_in_nigeria">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Not in Nigeria? No Problem!</h3>
+                            <p class="flyer-details">We've taught students across several countries &amp; continents (UK, US, Canada, Poland, Ghana &amp; more). Your location is not a barrier to quality learning!</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="not_in_nigeria">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20am%20located%20outside%20Nigeria%20and%20interested%20in%20your%20international%20online%20tutoring%20lessons." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Igbo Made Easy! -->
+                    <div class="flyer-card" data-category="general intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-igbo-made-easy.jpg" alt="Igbo Made Easy Language Tutoring Flyer - Dr. J Tutors" class="flyer-img">
+                            <span class="flyer-badge accent">Language &amp; Culture</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="igbo_made_easy">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Igbo Made Easy!</h3>
+                            <p class="flyer-details">Ụmụaka Kwesịrị Ịmụ Igbo! Beginner to intermediate speaking, listening, reading, writing &amp; cultural context with flexible schedules for busy families.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="igbo_made_easy">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20for%20the%20Igbo%20Made%20Easy%20language%20lessons%20for%20my%20child." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Say Bonjour to French! -->
+                    <div class="flyer-card" data-category="general intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-french.jpg" alt="Say Bonjour to French Tutoring Flyer - Dr. J Tutors" class="flyer-img">
+                            <span class="flyer-badge accent">French Classes</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="french">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Say Bonjour to French!</h3>
+                            <p class="flyer-details">Personalised French classes for students and adults! Master speaking, pronunciation, reading, grammar, and everyday communication via online platforms.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="french">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20in%20your%20French%20language%20classes." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Introducing Piano Lessons -->
+                    <div class="flyer-card" data-category="general intl">
+                        <div class="flyer-img-container">
+                            <img src="./flyer-piano-lessons.jpg" alt="Introducing Piano Lessons Flyer - Dr. J Tutors" class="flyer-img">
+                            <span class="flyer-badge accent">Music Lessons</span>
+                            <div class="flyer-hover-overlay">
+                                <button class="btn btn-primary open-flyer-modal" data-flyer="piano_lessons">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Introducing Piano Lessons</h3>
+                            <p class="flyer-details">Give your child the opportunity to learn piano &amp; build musical confidence! Covering music theory, chords, scales, song scoring &amp; playing via online platforms.</p>
+                            <div class="flyer-buttons-group">
+                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="piano_lessons">Read Details</button>
+                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20in%20your%20Piano%20Lessons%20program." 
+                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Happy Independence Day / New Month -->
                     <div class="flyer-card" data-category="general">
                         <div class="flyer-img-container">
                             <img src="./flyer-independence-day.jpg" alt="Happy Independence Day Flyer" class="flyer-img">
@@ -265,26 +408,6 @@
                                 <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="school">Read Details</button>
                                 <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20the%20Welcome%20Back%20to%20School%20tutoring%20package." 
                                    class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3. Happy New Month (September) -->
-                    <div class="flyer-card" data-category="general">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-september.jpg" alt="Happy New Month September Flyer" class="flyer-img">
-                            <span class="flyer-badge">September</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="september">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Happy New Month! (September)</h3>
-                            <p class="flyer-details">We are ready to serve you better in September! Just a booking away from personalized tutoring for your child.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="september">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20booking%20tutoring%20sessions%20for%20September." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -528,26 +651,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- 16. Unlock Your Child's Academic Potential -->
-                    <div class="flyer-card" data-category="intl">
-                        <div class="flyer-img-container">
-                            <img src="./flyer-scholarly-intl-alt.jpg" alt="Unlock Your Child's Academic Potential Flyer" class="flyer-img">
-                            <span class="flyer-badge accent">Global Tutoring</span>
-                            <div class="flyer-hover-overlay">
-                                <button class="btn btn-primary open-flyer-modal" data-flyer="scholarly_intl_alt">Quick View</button>
-                            </div>
-                        </div>
-                        <div class="flyer-content">
-                            <h3>Unlock Your Child’s Academic Potential</h3>
-                            <p class="flyer-details">Personalized virtual tutoring for UK, US, and Canadian curricula. Dedicated instruction tailored to your child's specific learning pace.</p>
-                            <div class="flyer-buttons-group">
-                                <button class="btn btn-secondary btn-sm open-flyer-modal" data-flyer="scholarly_intl_alt">Read Details</button>
-                                <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20International%20Curriculum%20Mastery%20for%20my%20child." 
-                                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -611,7 +714,7 @@
                         <div class="service-icon"><i class="bi bi-house-heart"></i></div>
                         <h3>Home Tutoring</h3>
                         <p>Personalized, offline one-on-one lessons in the comfort of your home. Covering <strong>Primary 1–6 / JSS1–SS3</strong> (Nigeria) · <strong>Year 1–12</strong> (UK) · <strong>Grade 1–12</strong> (US).</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Home%20Tutoring%20services." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Home%20Tutoring%20services." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
                     
                     <!-- Service 2 -->
@@ -619,7 +722,7 @@
                         <div class="service-icon"><i class="bi bi-laptop"></i></div>
                         <h3>Online Tutoring</h3>
                         <p>Interactive virtual classes for students globally, including Nigeria, the UK, Canada, the USA, and beyond.</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Online%20Tutoring%20services." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Online%20Tutoring%20services." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <!-- Service 3 -->
@@ -627,7 +730,7 @@
                         <div class="service-icon"><i class="bi bi-globe-europe-africa"></i></div>
                         <h3>GCSE &amp; IGCSE Prep</h3>
                         <p>Expert preparation across major exam boards (AQA, Edexcel, Cambridge) for high-scoring results.</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20GCSE%20and%20IGCSE%20preparation." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20GCSE%20and%20IGCSE%20preparation." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <!-- Service 4 -->
@@ -635,7 +738,7 @@
                         <div class="service-icon"><i class="bi bi-backpack"></i></div>
                         <h3>UK 11+ Exam Prep</h3>
                         <p>Specialized coaching for students preparing for highly competitive grammar and selective secondary schools.</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20UK%2011%2B%20Exam%20preparation." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20UK%2011%2B%20Exam%20preparation." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <!-- Service 5 -->
@@ -643,7 +746,7 @@
                         <div class="service-icon"><i class="bi bi-journal-check"></i></div>
                         <h3>WAEC, NECO &amp; JAMB</h3>
                         <p>Intensive exam-focused prep classes and past question practice tailored for outstanding success in Nigerian exams.</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20WAEC%2C%20NECO%2C%20and%20JAMB%20classes." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20WAEC%2C%20NECO%2C%20and%20JAMB%20classes." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <!-- Service 6 -->
@@ -651,7 +754,7 @@
                         <div class="service-icon"><i class="bi bi-calculator"></i></div>
                         <h3>Maths Tutoring</h3>
                         <p>Overcoming math anxiety through structured, easy-to-digest strategies that build strong problem-solving skills.</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Mathematics%20tutoring." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Mathematics%20tutoring." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <!-- Service 7 -->
@@ -659,7 +762,7 @@
                         <div class="service-icon"><i class="bi bi-lightbulb"></i></div>
                         <h3>Science Tutoring</h3>
                         <p>Interactive lessons in Physics, Chemistry, Biology, and Basic Science using practical illustrations.</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Science%20%28Physics%2C%20Chemistry%2C%20Biology%29%20tutoring." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Science%20%28Physics%2C%20Chemistry%2C%20Biology%29%20tutoring." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <!-- Service 8 -->
@@ -667,7 +770,7 @@
                         <div class="service-icon"><i class="bi bi-alphabet-uppercase"></i></div>
                         <h3>English Language</h3>
                         <p>Grammar masterclasses, reading comprehension, vocabulary expansion, and essay writing support.</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20English%20Language%20tutoring." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20English%20Language%20tutoring." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <!-- Service 9 -->
@@ -675,7 +778,7 @@
                         <div class="service-icon"><i class="bi bi-stars"></i></div>
                         <h3>Academic Improvement</h3>
                         <p>Focused support for students facing learning blockages to rebuild their foundations and raise grades.</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20the%20Academic%20Improvement%20Program." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20the%20Academic%20Improvement%20Program." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <!-- Service 10 -->
@@ -683,7 +786,7 @@
                         <div class="service-icon"><i class="bi bi-mortarboard"></i></div>
                         <h3>SAT, A-Levels &amp; SATs</h3>
                         <p>Rigorous tutoring schedules targeting competitive entrance scores for universities and secondary colleges.</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20SAT%20and%20A-Level%20prep." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20SAT%20and%20A-Level%20prep." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <!-- Service 11 -->
@@ -691,7 +794,7 @@
                         <div class="service-icon"><i class="bi bi-pencil-square"></i></div>
                         <h3>Assignment Support</h3>
                         <p>Continuous study guidance, revision plan creation, exam technique coaching, and homework support.</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Assignment%20and%20Revision%20Support." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Assignment%20and%20Revision%20Support." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <!-- Service 12 -->
@@ -699,7 +802,7 @@
                         <div class="service-icon"><i class="bi bi-person-workspace"></i></div>
                         <h3>Tutor Empowerment</h3>
                         <p>Professional training programs for young graduates and aspiring teachers on modern digital teaching tools.</p>
-                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Teacher%20Training%20%26%20Online%20Tutor%20Empowerment." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp &rarr;</a>
+                        <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20Teacher%20Training%20%26%20Online%20Tutor%20Empowerment." class="service-link" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
                 
@@ -822,7 +925,7 @@
                             <img src="https://flagcdn.com/w40/au.png" alt="Australia" class="curricula-also-flag-img"> Australia
                         </span>
                         <span class="curricula-also-item">
-                            🌍 All curricula worldwide
+                            <i class="bi bi-globe2" style="margin-right: 0.25rem; color: var(--secondary);"></i> All curricula worldwide
                         </span>
                     </div>
                 </div>
@@ -839,7 +942,7 @@
                 </div>
 
                 <div class="testimonials-carousel-wrapper">
-                    <button class="carousel-control prev" id="btnTestimonialPrev" aria-label="Previous testimonial">&larr;</button>
+                    <button class="carousel-control prev" id="btnTestimonialPrev" aria-label="Previous testimonial"><i class="bi bi-chevron-left"></i></button>
                     
                     <div class="testimonials-carousel">
                         <div class="testimonials-track" id="testimonialsTrack">
@@ -908,7 +1011,7 @@
                         </div>
                     </div>
 
-                    <button class="carousel-control next" id="btnTestimonialNext" aria-label="Next testimonial">&rarr;</button>
+                    <button class="carousel-control next" id="btnTestimonialNext" aria-label="Next testimonial"><i class="bi bi-chevron-right"></i></button>
                 </div>
 
                 <div class="carousel-dots" id="carouselDots">
@@ -971,11 +1074,11 @@
                     <!-- Print & Download Buttons -->
                     <div class="tracker-actions-bar">
                         <a href="study-tracker.pdf" download class="btn btn-secondary btn-outline">
-                            📥 Download Study Tracker PDF
+                            <i class="bi bi-file-earmark-arrow-down-fill" style="margin-right: 0.4rem;"></i> Download Study Tracker PDF
                         </a>
                         <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20would%20like%20to%20enquire%20about%20getting%20a%20personalized%20study%20progress%20tracker%20for%20my%20child." 
                            id="trackerWhatsAppCTA" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                            💬 Enquire on WhatsApp
+                            <i class="bi bi-whatsapp" style="margin-right: 0.4rem;"></i> Enquire on WhatsApp
                         </a>
                     </div>
                 </div>
@@ -996,7 +1099,7 @@
                     <div class="faq-item">
                         <button class="faq-header" aria-expanded="false">
                             <span>How do online classes work?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
                         </button>
                         <div class="faq-body">
                             <p>Our online lessons take place via interactive digital platforms (Zoom/Google Meet) combined with digital whiteboards. Students can see their tutor, collaborate on whiteboard problems in real-time, and download session notes immediately after class.</p>
@@ -1007,7 +1110,7 @@
                     <div class="faq-item">
                         <button class="faq-header" aria-expanded="false">
                             <span>What happens if my child misses a scheduled lesson?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
                         </button>
                         <div class="faq-body">
                             <p>We require at least a 24-hour notice to reschedule or cancel a class without fee penalties. Missed classes with prior notice will be rescheduled to a mutually convenient time within the same billing cycle.</p>
@@ -1018,7 +1121,7 @@
                     <div class="faq-item">
                         <button class="faq-header" aria-expanded="false">
                             <span>Are the tutors qualified?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
                         </button>
                         <div class="faq-body">
                             <p>Yes, all our tutors undergo rigorous vetting, academic screening, and background checks. They are also trained in the Dr. J Tutors methodology, which emphasizes patience, understanding individual child psychology, and utilizing interactive digital tools.</p>
@@ -1029,7 +1132,7 @@
                     <div class="faq-item">
                         <button class="faq-header" aria-expanded="false">
                             <span>Can we get a mixture of Home and Online tutoring?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
                         </button>
                         <div class="faq-body">
                             <p>Yes! Depending on your location (e.g., within our Lagos &amp; Benin coverage zone) and school schedules, we can structure a hybrid plan where students receive physical home lessons on weekends and online review sessions during weekdays.</p>
@@ -1040,7 +1143,7 @@
                     <div class="faq-item">
                         <button class="faq-header" aria-expanded="false">
                             <span>How do I pay for the lessons?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
                         </button>
                         <div class="faq-body">
                             <p>Payments are made in advance on a monthly retainer basis. Once we align on your child's schedule and tutoring package, an invoice will be sent with bank transfer payment options.</p>
@@ -1085,7 +1188,7 @@
                                 <textarea id="messageText" class="form-control" rows="3" placeholder="e.g. preparing for IGCSE exam in October..."></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-full btn-large">Send Enquiry via WhatsApp</button>
+                            <button type="submit" class="btn btn-primary btn-full btn-large"><i class="bi bi-whatsapp" style="margin-right: 0.4rem;"></i> Send Enquiry via WhatsApp</button>
                         </form>
                     </div>
 
@@ -1191,7 +1294,7 @@
     <!-- Flyer Detail Modal -->
     <div id="flyerModal" class="modal-overlay">
         <div class="modal-content">
-            <button class="modal-close" id="modalClose" aria-label="Close details">&times;</button>
+            <button class="modal-close" id="modalClose" aria-label="Close details"><i class="bi bi-x-lg"></i></button>
             <div class="modal-body-grid">
                 <div class="modal-visual-pane">
                     <img id="modalImage" src="" alt="Flyer Preview">
@@ -1203,7 +1306,7 @@
                     </div>
                     <div class="modal-actions">
                         <a id="modalWhatsAppBtn" href="" class="btn btn-secondary btn-full" target="_blank" rel="noopener noreferrer">
-                            Enquire on WhatsApp &rarr;
+                            <i class="bi bi-whatsapp" style="margin-right: 0.4rem;"></i> Enquire on WhatsApp <i class="bi bi-arrow-right" style="margin-left: 0.3rem;"></i>
                         </a>
                     </div>
                 </div>
@@ -1217,7 +1320,7 @@
        target="_blank" 
        aria-label="Chat with Dr. J Tutors on WhatsApp" 
        rel="noopener noreferrer">
-        <span class="whatsapp-badge-icon">💬</span>
+        <span class="whatsapp-badge-icon"><i class="bi bi-whatsapp"></i></span>
         <span class="whatsapp-badge-text">Chat with us on WhatsApp</span>
     </a>
 

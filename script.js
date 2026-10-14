@@ -210,6 +210,137 @@ document.addEventListener('DOMContentLoaded', () => {
     const openModalBtns = document.querySelectorAll('.open-flyer-modal');
 
     const flyerData = {
+        score_300_utme: {
+            title: "JAMB 2027 Registration",
+            image: "./flyer-score-300-utme.jpg",
+            description: `
+                <p class="modal-intro">🚨🎉 <strong>JAMB 2027 REGISTRATION IS ONGOING AT DR. J TUTORS!</strong> 🎉📚</p>
+                <p><strong>Are you ready to score 300+ in JAMB 2027? 🔥💯</strong></p>
+                <p>The journey to an outstanding JAMB score starts <strong>NOW</strong>, not when the examination is around the corner!</p>
+                <p>At Dr. J Tutors, we are committed to helping students prepare intentionally, understand difficult concepts, practise exam questions, and build the confidence they need to excel. 💜💚</p>
+                
+                <h4 class="modal-subheading">Key Information:</h4>
+                <ul class="modal-bullets">
+                    <li>📌 <strong>Registration is ongoing!</strong></li>
+                    <li>📚 <strong>Classes resume in November 2026.</strong></li>
+                    <li>🎯 <strong>Start preparing early and give yourself the best opportunity to excel.</strong></li>
+                </ul>
+
+                <h4 class="modal-subheading">What We Offer:</h4>
+                <ul class="modal-bullets">
+                    <li>✅ <strong>Structured JAMB preparation</strong></li>
+                    <li>✅ <strong>Experienced tutors</strong></li>
+                    <li>✅ <strong>Regular practice and revision</strong></li>
+                    <li>✅ <strong>Support to help you work towards your target score</strong></li>
+                </ul>
+
+                <p class="modal-summary">🔥 <strong>YOUR 300+ JOURNEY STARTS HERE!</strong></p>
+                <div style="margin: 1.25rem 0 0.75rem;">
+                    <a href="./jamb" class="btn btn-primary btn-full" style="display: block; text-align: center; text-decoration: none; padding: 0.85rem; font-weight: 700; border-radius: var(--radius-sm);">Go to Dedicated JAMB Registration Page &rarr;</a>
+                </div>
+                <p class="modal-footnote">📲 Register via WhatsApp: 0810 999 5491 or 0907 481 8280</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20am%20interested%20in%20JAMB%202027%20Registration."
+        },
+        not_in_nigeria: {
+            title: "Not in Nigeria? You've Got No Problem!",
+            image: "./flyer-not-in-nigeria.jpg",
+            description: `
+                <p class="modal-intro">🌍✈️ <strong>Not in Nigeria? You've Got No Problem!</strong></p>
+                <p>At Dr. J Tutors, <em>learning is made easy</em> no matter where you are located. We have successfully taught students across several countries and continents — your location is never a barrier to receiving top-quality, personalized education!</p>
+                
+                <h4 class="modal-subheading">Curricula &amp; Countries We Actively Support:</h4>
+                <ul class="modal-bullets">
+                    <li>🇬🇧 <strong>United Kingdom:</strong> Key Stage 1–4, GCSE, IGCSE &amp; A-Levels</li>
+                    <li>🇺🇸 <strong>United States:</strong> Grade 1–12, Middle/High School curricula &amp; SAT prep</li>
+                    <li>🇨🇦 <strong>Canada:</strong> Provincial curricula across all elementary &amp; high school grades</li>
+                    <li>🇵🇱 <strong>Poland &amp; Europe:</strong> English-medium international &amp; IB curricula</li>
+                    <li>🇬🇭 <strong>Ghana &amp; West Africa:</strong> WASSCE, BECE &amp; Cambridge International syllabuses</li>
+                    <li>🇳🇬 <strong>Nigeria:</strong> Full national &amp; British-Nigerian blended curricula</li>
+                </ul>
+
+                <h4 class="modal-subheading">Why Learn With Dr. J Tutors Globally?</h4>
+                <ul class="modal-bullets">
+                    <li>💻 Interactive 1-on-1 virtual classrooms with digital writing tablets and instant notes</li>
+                    <li>⏰ Flexible schedules accommodating international time zones (UK, US, Canada, Europe, Africa)</li>
+                    <li>🎯 Targeted exam techniques and curriculum-aligned subject coverage</li>
+                </ul>
+
+                <p class="modal-summary">Ready to get started from anywhere in the world?</p>
+                <p class="modal-footnote">📲 Send us a DM on WhatsApp or call +234 907 481 8280 to begin!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20am%20located%20outside%20Nigeria%20and%20interested%20in%20your%20international%20online%20tutoring%20lessons."
+        },
+        igbo_made_easy: {
+            title: "Igbo Made Easy! (Ụmụaka Kwesịrị Ịmụ Igbo!)",
+            image: "./flyer-igbo-made-easy.jpg",
+            description: `
+                <p class="modal-intro">🇳🇬✨ <strong>Igbo Made Easy – Ụmụaka Kwesịrị Ịmụ Igbo!</strong></p>
+                <p>Connect your children to their rich cultural heritage and language roots! Dr. J Tutors offers engaging, child-friendly Igbo language lessons designed to make learning practical, enjoyable, and effective.</p>
+                
+                <h4 class="modal-subheading">What We Offer:</h4>
+                <ul class="modal-bullets">
+                    <li>🌱 <strong>Beginner to Intermediate:</strong> Suitable for absolute beginners and children expanding their vocabulary</li>
+                    <li>🗣️ <strong>Four-Skill Mastery:</strong> Speaking, listening, reading &amp; writing development</li>
+                    <li>🌍 <strong>Cultural Context:</strong> Folktales, proverbs, greetings, values, and real-world conversation</li>
+                    <li>🎯 <strong>Personalised Tutorial Sessions:</strong> Tailored to each student's age, level, and individual goals</li>
+                    <li>⏰ <strong>Flexible Schedules:</strong> Convenient weekend and weekday class times for busy families locally and abroad</li>
+                </ul>
+
+                <p class="modal-summary">💡 <em>Lessons are delivered with the same result-driven approach that Dr. J Tutors is known for!</em></p>
+                <p class="modal-footnote">📲 Book your child's slot today on WhatsApp or call 09074818280!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20for%20the%20Igbo%20Made%20Easy%20language%20lessons%20for%20my%20child."
+        },
+        french: {
+            title: "Say Bonjour to French! (French Classes)",
+            image: "./flyer-french.jpg",
+            description: `
+                <p class="modal-intro">🇫🇷✨ <strong>Say Bonjour to French with Dr. J Tutors!</strong></p>
+                <p>Dr. J Tutors is now offering personalized <strong>French Classes</strong> for students and adults who are interested in learning a new language. <em>À bientôt!</em></p>
+                
+                <h4 class="modal-subheading">Lessons Outline:</h4>
+                <ul class="modal-bullets">
+                    <li>🗣️ <strong>Speaking &amp; Pronunciation:</strong> Build an authentic accent, phonetics, and conversational fluency</li>
+                    <li>📖 <strong>Reading &amp; Writing:</strong> Master French spelling, sentence structures, and comprehension</li>
+                    <li>📝 <strong>Vocabulary &amp; Grammar:</strong> Conjugations, tenses, common idioms, and essential expressions</li>
+                    <li>🎧 <strong>Listening &amp; Comprehension:</strong> Understand native spoken French in real-time conversations</li>
+                    <li>💬 <strong>Everyday French Communication:</strong> Practical dialogue for academics, travel, exams, or career</li>
+                </ul>
+
+                <h4 class="modal-subheading">Flexible Online Learning:</h4>
+                <p>Your location is not a barrier! All lessons are available via modern <strong>Online Platforms</strong>, making it convenient to learn from anywhere in the world.</p>
+
+                <p class="modal-summary">Whether you're learning for school curriculum exams, international travel, or personal growth, we tailor every lesson to your pace!</p>
+                <p class="modal-footnote">📲 Book your French lessons today via WhatsApp or call 09074818280!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20in%20your%20French%20language%20classes."
+        },
+        piano_lessons: {
+            title: "Introducing Piano Lessons",
+            image: "./flyer-piano-lessons.jpg",
+            description: `
+                <p class="modal-intro">🎹🎶 <strong>Introducing Piano Lessons with Dr. J Tutors!</strong></p>
+                <p>Give your child the opportunity to learn the piano, develop musical confidence, and build a creative skill they can enjoy for years to come. <em>Learning Made Easy!</em></p>
+                
+                <h4 class="modal-subheading">What You'll Learn:</h4>
+                <ul class="modal-bullets">
+                    <li>🎼 <strong>Music Theory:</strong> Musical notation, rhythm, bar structures, and time signatures</li>
+                    <li>🎹 <strong>Piano Fundamentals:</strong> Correct posture, finger technique, and keyboard mastery</li>
+                    <li>🎵 <strong>Notes, Chords &amp; Scales:</strong> Key signatures, chord progressions, and scales</li>
+                    <li>📝 <strong>Scoring of Songs:</strong> Reading, transcribing, and interpreting sheet music</li>
+                    <li>🎶 <strong>Playing Songs:</strong> Repertoire development across diverse musical styles</li>
+                    <li>✨ <strong>Technique &amp; Coordination:</strong> Hand independence, dexterity, and artistic expression</li>
+                </ul>
+
+                <h4 class="modal-subheading">Flexible Online Learning:</h4>
+                <p>Your location is not a barrier! All lessons are available via modern <strong>Online Platforms</strong>, making it easy to learn from home anywhere in the world.</p>
+
+                <p class="modal-summary">🌟 Personalized instruction tailored to each student's pace, age, and musical goals!</p>
+                <p class="modal-footnote">📲 Book your piano lessons on WhatsApp or call 09074818280!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20in%20your%20Piano%20Lessons%20program."
+        },
         independence: {
             title: "Happy Independence Day & New Month!",
             image: "./flyer-independence-day.jpg",

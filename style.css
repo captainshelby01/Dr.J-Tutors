@@ -537,37 +537,84 @@ p {
 .mission-steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1.75rem;
+    max-width: 1020px;
+    margin: 2.75rem auto 0;
 }
 
 .step-card {
-    background-color: var(--primary-light);
-    padding: 1rem;
-    border-radius: var(--radius-md);
+    background-color: #ffffff;
+    padding: 2.5rem 1.75rem 2rem;
+    border-radius: var(--radius-lg);
     text-align: center;
     border: 2px solid var(--primary);
     font-family: var(--font-heading);
     color: var(--neutral-dark);
     cursor: pointer;
-    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+    box-shadow: 0 8px 24px rgba(153, 204, 51, 0.14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
 }
 
 .step-card:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(111, 45, 168, 0.16);
+    border-color: var(--secondary);
 }
 
 .step-card .step-num {
-    display: block;
-    width: 32px;
-    height: 32px;
-    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
     color: white;
     font-weight: 700;
-    font-size: 1.1rem;
-    line-height: 28px;
+    font-size: 1.35rem;
     border-radius: 50%;
-    margin: 0 auto 0.5rem;
+    margin: 0 auto 1.25rem;
+    box-shadow: 0 4px 12px rgba(153, 204, 51, 0.35);
+}
+
+.step-card .step-title {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--neutral-dark);
+    margin-bottom: 0.75rem;
+}
+
+.step-card .step-desc {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #4b5563;
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+}
+
+.step-card .step-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--secondary);
+    background: var(--secondary-light);
+    padding: 0.45rem 1.15rem;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+}
+
+.step-card:hover .step-action {
+    background: var(--secondary);
+    color: #ffffff;
 }
 
 /* Session Gallery */
@@ -987,7 +1034,7 @@ p {
     right: 1.25rem;
     background: #f5f5f5;
     border: none;
-    font-size: 1.75rem;
+    font-size: 1.15rem;
     line-height: 1;
     width: 2.25rem;
     height: 2.25rem;
@@ -1500,9 +1547,12 @@ p {
 }
 
 .faq-icon {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     color: var(--secondary);
     transition: transform var(--transition-normal);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .faq-body {
@@ -1844,6 +1894,10 @@ p {
 
 .whatsapp-badge-icon {
     font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
 
 .whatsapp-badge-text {
@@ -2013,21 +2067,21 @@ p {
     }
     
     .mission-steps {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.5rem;
+        grid-template-columns: 1fr;
+        max-width: 440px;
+        gap: 1.25rem;
+        margin: 2rem auto 0;
     }
     
     .step-card {
-        padding: 0.6rem 0.4rem;
-        font-size: 0.85rem;
+        padding: 2rem 1.5rem;
     }
     
     .step-card .step-num {
-        width: 26px;
-        height: 26px;
-        font-size: 0.95rem;
-        line-height: 22px;
-        margin-bottom: 0.25rem;
+        width: 46px;
+        height: 46px;
+        font-size: 1.25rem;
+        margin-bottom: 0.85rem;
     }
     
     .contact-card {
@@ -2438,5 +2492,73 @@ p {
         text-align: center;
     }
 }
+
+/* ==========================================================================
+   Homepage JAMB Top Announcement Banner
+   ========================================================================== */
+.jamb-announcement-banner {
+    background: linear-gradient(90deg, #2d1b4e 0%, #6f2da8 60%, #431b69 100%);
+    color: #ffffff;
+    padding: 0.65rem 0;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 101;
+    border-bottom: 2px solid var(--primary);
+}
+
+.jamb-banner-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.jamb-banner-badge {
+    background: #ef4444;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-full);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.jamb-banner-text {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.jamb-banner-text strong {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.jamb-banner-cta {
+    background: var(--primary);
+    color: var(--neutral-dark);
+    font-weight: 700;
+    font-size: 0.825rem;
+    padding: 0.35rem 0.95rem;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    white-space: nowrap;
+}
+
+.jamb-banner-cta:hover {
+    background: #ffffff;
+    color: var(--secondary);
+    transform: translateX(2px);
+}
+
 
 
