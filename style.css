@@ -2499,7 +2499,7 @@ p {
 .jamb-announcement-banner {
     background: linear-gradient(90deg, #2d1b4e 0%, #6f2da8 60%, #431b69 100%);
     color: #ffffff;
-    padding: 0.65rem 0;
+    padding: 1.25rem 0 0.65rem;
     font-size: 0.9rem;
     position: relative;
     z-index: 101;

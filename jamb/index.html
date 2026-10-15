@@ -13,7 +13,7 @@
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="JAMB 2027 Registration | Dr. J Tutors">
-    <meta property="og:description" content="🚨🎉 JAMB 2027 REGISTRATION IS ONGOING AT DR. J TUTORS! Are you ready to score 300+ in JAMB 2027? Classes resume in November 2026.">
+    <meta property="og:description" content="JAMB 2027 REGISTRATION IS ONGOING AT DR. J TUTORS! Are you ready to score 300+ in JAMB 2027? Classes resume in November 2026.">
     <meta property="og:image" content="../flyer-score-300-utme.jpg">
     <meta property="og:url" content="https://drjtutors.com/jamb">
 
@@ -434,14 +434,14 @@
             color: #ffffff;
             font-family: var(--font-heading);
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             padding: 1.1rem 2rem;
             border: none;
             border-radius: var(--radius-full);
             cursor: pointer;
             width: 100%;
-            transition: all 0.3s ease;
-            box-shadow: 0 6px 18px rgba(122, 168, 38, 0.35);
+            transition: all var(--transition-normal);
+            box-shadow: 0 4px 14px rgba(122, 168, 38, 0.35);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -451,7 +451,7 @@
         .jamb-submit-btn:hover {
             background: #6a941f;
             transform: translateY(-2px);
-            box-shadow: 0 10px 24px rgba(122, 168, 38, 0.45);
+            box-shadow: 0 8px 20px rgba(122, 168, 38, 0.45);
         }
 
         .jamb-whatsapp-direct {
@@ -475,17 +475,18 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 1.5rem;
+            gap: 1.25rem;
             margin-top: 0.5rem;
         }
 
         .jamb-phone-btn {
             background: #25d366;
             color: #ffffff;
-            font-weight: 700;
-            font-size: 1rem;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.95rem;
             padding: 0.65rem 1.25rem;
-            border-radius: var(--radius-full);
+            border-radius: 8px;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
@@ -498,6 +499,79 @@
             box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
         }
 
+        /* Unified Buttons with Round Pill Edges Matching Main Page */
+        .jamb-header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .jamb-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.65rem 1.45rem;
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all var(--transition-normal);
+            border: 2px solid transparent;
+            line-height: 1.25;
+            min-height: 42px;
+            text-align: center;
+        }
+
+        .jamb-btn-primary {
+            background-color: var(--primary);
+            color: var(--neutral-light);
+            box-shadow: 0 4px 14px rgba(153, 204, 51, 0.4);
+        }
+
+        .jamb-btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(153, 204, 51, 0.5);
+            color: var(--neutral-light);
+        }
+
+        .jamb-btn-secondary {
+            background-color: var(--secondary);
+            color: var(--neutral-light);
+            box-shadow: 0 4px 14px rgba(111, 45, 168, 0.3);
+        }
+
+        .jamb-btn-secondary:hover {
+            background-color: var(--secondary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(111, 45, 168, 0.4);
+            color: var(--neutral-light);
+        }
+
+        .jamb-btn-purple {
+            background-color: var(--secondary);
+            color: var(--neutral-light);
+            box-shadow: 0 4px 14px rgba(111, 45, 168, 0.3);
+        }
+
+        .jamb-btn-purple:hover {
+            background-color: var(--secondary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(111, 45, 168, 0.4);
+            color: var(--neutral-light);
+        }
+
+        .jamb-btn-large {
+            padding: 1rem 2.25rem;
+            font-size: 1.125rem;
+            min-height: 48px;
+            border-radius: var(--radius-full);
+        }
+
         @media (max-width: 768px) {
             .jamb-hero-grid {
                 grid-template-columns: 1fr;
@@ -508,6 +582,53 @@
             }
             .jamb-form-container {
                 padding: 2rem 1.25rem;
+            }
+            .jamb-hero-actions {
+                flex-direction: column;
+                width: 100%;
+                gap: 0.75rem;
+            }
+            .jamb-hero-actions .jamb-btn {
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .site-header .container {
+                padding: 0.6rem 0.85rem !important;
+            }
+            .logo-link {
+                gap: 0.5rem !important;
+            }
+            .logo-img {
+                width: 36px !important;
+                height: 36px !important;
+            }
+            .logo-text {
+                font-size: 1.15rem !important;
+            }
+            .jamb-header-actions {
+                gap: 0.4rem;
+            }
+            .jamb-btn-header {
+                padding: 0.45rem 0.85rem;
+                font-size: 0.825rem;
+                min-height: 36px;
+                border-radius: var(--radius-full);
+            }
+            .btn-text-desktop {
+                display: none;
+            }
+            .btn-text-mobile {
+                display: inline;
+            }
+        }
+
+        @media (min-width: 601px) {
+            .btn-text-mobile {
+                display: none;
             }
         }
     </style>
@@ -533,12 +654,16 @@
                 </span>
             </a>
 
-            <div class="header-actions" style="display: flex; align-items: center; gap: 1rem;">
-                <a href="../" class="btn btn-secondary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; text-decoration: none;">
-                    <i class="bi bi-arrow-left" style="margin-right: 0.35rem;"></i> Back to Main Website
+            <div class="jamb-header-actions">
+                <a href="../" class="jamb-btn jamb-btn-secondary jamb-btn-header" aria-label="Back to Main Website">
+                    <i class="bi bi-arrow-left"></i>
+                    <span class="btn-text-desktop">Main Website</span>
+                    <span class="btn-text-mobile">Home</span>
                 </a>
-                <a href="#registerForm" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; text-decoration: none;">
-                    <i class="bi bi-pencil-square" style="margin-right: 0.35rem;"></i> Register Now
+                <a href="#registerForm" class="jamb-btn jamb-btn-primary jamb-btn-header" aria-label="Register Now">
+                    <i class="bi bi-pencil-square"></i>
+                    <span class="btn-text-desktop">Register Now</span>
+                    <span class="btn-text-mobile">Register</span>
                 </a>
             </div>
         </div>
@@ -556,7 +681,7 @@
                         </div>
                         
                         <h1 class="jamb-hero-title">
-                            Are you ready to <span class="highlight-purple">score 300+</span> in <span class="highlight-green">JAMB 2027?</span> 🔥💯
+                            Are you ready to <span class="highlight-purple">score 300+</span> in <span class="highlight-green">JAMB 2027?</span>
                         </h1>
                         
                         <p class="jamb-hero-desc">
@@ -564,7 +689,7 @@
                         </p>
 
                         <p class="jamb-hero-desc" style="margin-top: -0.75rem;">
-                            At Dr. J Tutors, we are committed to helping students prepare intentionally, understand difficult concepts, practise exam questions, and build the confidence they need to excel. 💜💚
+                            At Dr. J Tutors, we are committed to helping students prepare intentionally, understand difficult concepts, practise exam questions, and build the confidence they need to excel.
                         </p>
 
                         <!-- Key Information Provided by Client -->
@@ -585,14 +710,10 @@
                             </ul>
                         </div>
 
-                        <!-- Hero CTAs -->
+                        <!-- Hero CTA -->
                         <div class="jamb-hero-actions">
-                            <a href="#registerForm" class="btn btn-primary btn-large" style="text-decoration: none;">
-                                <i class="bi bi-pencil-square" style="margin-right: 0.4rem;"></i> Register Online Now
-                            </a>
-                            <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20am%20interested%20in%20JAMB%202027%20Registration." 
-                               class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                                <i class="bi bi-whatsapp" style="margin-right: 0.4rem;"></i> Register via WhatsApp
+                            <a href="#registerForm" class="jamb-btn jamb-btn-primary jamb-btn-large">
+                                <i class="bi bi-pencil-square"></i> Register Online Now <i class="bi bi-arrow-right" style="margin-left: 0.35rem;"></i>
                             </a>
                         </div>
                     </div>
@@ -652,9 +773,9 @@
 
                 <!-- 300+ Journey Banner -->
                 <div class="jamb-journey-banner">
-                    <h2><i class="bi bi-fire" style="color: #ffb703; margin-right: 0.4rem;"></i> YOUR 300+ JOURNEY STARTS HERE!</h2>
+                    <h2>YOUR 300+ JOURNEY STARTS HERE!</h2>
                     <p>Start preparing early and give yourself the best opportunity to excel in JAMB 2027.</p>
-                    <a href="#registerForm" class="btn btn-primary btn-large" style="text-decoration: none;">Start Your Registration <i class="bi bi-arrow-right"></i></a>
+                    <a href="#registerForm" class="jamb-btn jamb-btn-primary jamb-btn-large">Start Your Registration <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
         </section>
@@ -664,7 +785,7 @@
             <div class="container">
                 <div class="section-title-wrapper text-center">
                     <span class="subtitle">Student Feedback</span>
-                    <h2><i class="bi bi-trophy-fill" style="color: #ffc107; margin-right: 0.4rem;"></i> Reviews &amp; Feedback From Our Students</h2>
+                    <h2>Reviews &amp; Feedback From Our Students</h2>
                     <div class="title-underline"></div>
                     <p class="section-description" style="max-width: 720px; margin: 0 auto; color: #4b5563;">
                         We’ve shared reviews and feedback from our students. Go through them and see what our students have to say about their learning experience with us!
@@ -724,7 +845,7 @@
             <div class="container">
                 <div class="jamb-form-container">
                     <div class="jamb-form-header">
-                        <h2><i class="bi bi-pencil-square" style="color: var(--secondary); margin-right: 0.4rem;"></i> Register online by filling this form:</h2>
+                        <h2>Register online by filling this form:</h2>
                     </div>
 
                     <form id="jambEnquiryForm">
@@ -776,7 +897,7 @@
                         <div class="jamb-closing-notice">
                             <strong><i class="bi bi-hourglass-split" style="color: var(--secondary); margin-right: 0.35rem;"></i> Don’t wait until it’s too late. Secure your place today!</strong>
                             <div style="margin-top: 0.35rem; font-weight: 600; color: var(--secondary);">
-                                Dr. J Tutors — Learning Made Easy. 💜💚
+                                Dr. J Tutors — Learning Made Easy.
                             </div>
                         </div>
 
@@ -786,19 +907,6 @@
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </form>
-
-                    <!-- Direct WhatsApp Registration -->
-                    <div class="jamb-whatsapp-direct">
-                        <h4><i class="bi bi-whatsapp" style="color: #25d366; margin-right: 0.35rem;"></i> Register via WhatsApp:</h4>
-                        <div class="jamb-phone-links">
-                            <a href="https://wa.me/2348109995491?text=Hi%20Dr.%20J%20Tutors%2C%20I%20want%20to%20register%20for%20JAMB%202027." class="jamb-phone-btn" target="_blank" rel="noopener noreferrer">
-                                <i class="bi bi-whatsapp"></i> 0810 999 5491
-                            </a>
-                            <a href="https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20want%20to%20register%20for%20JAMB%202027." class="jamb-phone-btn" target="_blank" rel="noopener noreferrer">
-                                <i class="bi bi-whatsapp"></i> 0907 481 8280
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -809,23 +917,23 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <span class="footer-title">Dr. J Tutors</span>
-                <p>Dr. J Tutors — Learning Made Easy. 💜💚</p>
+                <p>Delivering confidence, curriculum mastery, and top-tier test preparation results for children globally.</p>
             </div>
             <div class="footer-links-grid">
                 <div>
-                    <h5>JAMB Registration</h5>
+                    <h5>Quick Navigation</h5>
                     <ul class="footer-nav">
-                        <li><a href="#registerForm"><i class="bi bi-pencil-square" style="margin-right: 0.3rem;"></i> Register Online</a></li>
-                        <li><a href="https://wa.me/2348109995491" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" style="margin-right: 0.3rem;"></i> WhatsApp: 0810 999 5491</a></li>
-                        <li><a href="https://wa.me/2349074818280" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" style="margin-right: 0.3rem;"></i> WhatsApp: 0907 481 8280</a></li>
+                        <li><a href="../#home">Home</a></li>
+                        <li><a href="../#about">About</a></li>
+                        <li><a href="../#services">Services</a></li>
+                        <li><a href="../#offers">Campaigns</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h5>Main Website</h5>
+                    <h5>Support & Info</h5>
                     <ul class="footer-nav">
-                        <li><a href="../#home">Home</a></li>
-                        <li><a href="../#offers">Campaigns</a></li>
-                        <li><a href="../#services">Services</a></li>
+                        <li><a href="../#videos">Videos</a></li>
+                        <li><a href="../#faqs">FAQs</a></li>
                         <li><a href="../#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -834,6 +942,16 @@
         <div class="container footer-bottom">
             <div class="footer-credits-wrapper">
                 <p class="copyright-text">&copy; 2026 Dr. J Tutors. All rights reserved.</p>
+                
+                <div class="precision-separator">
+                    <span class="separator-line"></span>
+                    <span class="separator-text">Crafted with Precision</span>
+                    <span class="separator-line"></span>
+                </div>
+                
+                <p class="impact-credit-text">
+                    Website by <span class="impact-brand"><span class="brand-impact">Impact</span><span class="brand-dev">Dev</span></span>
+                </p>
             </div>
         </div>
     </footer>
