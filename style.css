@@ -46,6 +46,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
     font-size: 16px;
 }
 
@@ -206,7 +207,8 @@ p {
 
 /* Header & Navigation */
 .site-header {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -319,7 +321,7 @@ p {
 /* Hero Section */
 .hero-section {
     position: relative;
-    padding: 11rem 0 10rem;
+    padding: 5.5rem 0 8rem;
     background: linear-gradient(135deg, var(--neutral-light) 0%, #f4faeb 100%);
     overflow: hidden;
 }
@@ -1974,7 +1976,7 @@ p {
     }
 
     .hero-section {
-        padding: 6.5rem 0 4rem;
+        padding: 2.75rem 0 3.5rem;
     }
 
     .hero-content h1 {
@@ -2499,7 +2501,7 @@ p {
 .jamb-announcement-banner {
     background: linear-gradient(90deg, #2d1b4e 0%, #6f2da8 60%, #431b69 100%);
     color: #ffffff;
-    padding: 1.25rem 0 0.65rem;
+    padding: 0.75rem 0;
     font-size: 0.9rem;
     position: relative;
     z-index: 101;
@@ -2558,6 +2560,23 @@ p {
     background: #ffffff;
     color: var(--secondary);
     transform: translateX(2px);
+}
+
+@media (max-width: 768px) {
+    .jamb-announcement-banner {
+        padding: 0.65rem 0.75rem;
+        font-size: 0.825rem;
+        line-height: 1.4;
+    }
+
+    .jamb-banner-inner {
+        gap: 0.5rem;
+    }
+
+    .jamb-banner-cta {
+        font-size: 0.78rem;
+        padding: 0.3rem 0.85rem;
+    }
 }
 
 
