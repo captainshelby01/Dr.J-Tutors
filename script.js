@@ -846,4 +846,48 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+
+    // ==========================================
+    // Anniversary Milestone Counter Animation
+    // ==========================================
+    const anniversarySection = document.getElementById('anniversary');
+    if (anniversarySection) {
+        let animated = false;
+        const countUp = (el, target, duration = 1500) => {
+            const startTime = performance.now();
+            const step = (currentTime) => {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                // Ease out cubic
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                const currentVal = Math.floor(easeOut * target);
+                el.textContent = currentVal;
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                } else {
+                    el.textContent = target;
+                }
+            };
+            requestAnimationFrame(step);
+        };
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !animated) {
+                    animated = true;
+                    const statElements = anniversarySection.querySelectorAll('.stat-big-number');
+                    statElements.forEach(item => {
+                        const target = parseInt(item.getAttribute('data-target'), 10);
+                        const counterNum = item.querySelector('.counter-num');
+                        if (counterNum && !isNaN(target)) {
+                            countUp(counterNum, target);
+                        }
+                    });
+                    counterObserver.disconnect();
+                }
+            });
+        }, { threshold: 0.2 });
+
+        counterObserver.observe(anniversarySection);
+    }
 });
