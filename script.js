@@ -210,6 +210,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const openModalBtns = document.querySelectorAll('.open-flyer-modal');
 
     const flyerData = {
+        anniversary: {
+            title: "Celebrating Our One Year Anniversary!",
+            image: "./flyer-anniversary.jpg",
+            description: `
+                <p class="modal-intro">🎉✨ <strong>Celebrating Our One Year Anniversary! 365 Days of Growth!</strong> 🎓💜</p>
+                <p>Dr. J Tutors is proud to celebrate <strong>one full year of intentional tutoring, academic excellence, and measurable growth!</strong></p>
+                <p>Over the past 365 days, we have empowered students across Nigeria, the UK, the US, Canada, and beyond to overcome academic hurdles, gain confidence, and ace exams.</p>
+                
+                <h4 class="modal-subheading">Our Commitment to You:</h4>
+                <ul class="modal-bullets">
+                    <li>🌟 <strong>Personalised 1-on-1 Tutoring:</strong> Tailored home and online sessions matching your child's pace.</li>
+                    <li>🌍 <strong>Global Reach:</strong> Covering Nigerian, British, American, and Canadian curriculums.</li>
+                    <li>🎯 <strong>Targeted Exam Preparation:</strong> Proven strategies for WAEC, NECO, JAMB, GCSE, IGCSE, SAT &amp; 11+ exams.</li>
+                    <li>📈 <strong>Holistic Growth:</strong> Core academic subjects, language mastery (French, Igbo), and music (Piano).</li>
+                </ul>
+
+                <p class="modal-summary">Thank you to all our parents, students, and tutors for being a part of our journey. Here's to many more years of academic excellence!</p>
+                <p class="modal-footnote">📲 Reach out via WhatsApp at 09074818280 or email dr.j.tutors1@gmail.com to celebrate with us!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20Happy%20One%20Year%20Anniversary!%20I%20would%20like%20to%20enquire%20about%20your%20tutoring%20services."
+        },
         score_300_utme: {
             title: "JAMB 2027 Registration",
             image: "./flyer-score-300-utme.jpg",
