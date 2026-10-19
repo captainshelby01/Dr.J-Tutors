@@ -6,10 +6,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // ==========================================
-    // 1. Mobile Menu Interactivity
+    // 1. Mobile & Tablet Menu Interactivity
     // ==========================================
     const hamburgerBtn = document.getElementById('hamburgerBtn');
     const navMenu = document.getElementById('navMenu');
+
+    // Create and inject overlay element for click-outside-to-close
+    const navOverlay = document.createElement('div');
+    navOverlay.classList.add('nav-overlay');
+    document.body.appendChild(navOverlay);
+
+    function closeMenu() {
+        navMenu.classList.remove('open');
+        hamburgerBtn.classList.remove('open');
+        navOverlay.classList.remove('active');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+    }
     
     if (hamburgerBtn && navMenu) {
         hamburgerBtn.addEventListener('click', () => {
@@ -17,19 +29,52 @@ document.addEventListener('DOMContentLoaded', () => {
             
             navMenu.classList.toggle('open');
             hamburgerBtn.classList.toggle('open');
+            navOverlay.classList.toggle('active', !isOpen);
             
             // Accessibility state updates
             hamburgerBtn.setAttribute('aria-expanded', !isOpen);
         });
 
-        // Close menu when navigation links are clicked (for mobile users)
+        // Close menu when the overlay (outside area) is tapped
+        navOverlay.addEventListener('click', closeMenu);
+
+        // Smooth scroll and close menu when navigation links are clicked
         const navLinks = navMenu.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('open');
-                hamburgerBtn.classList.remove('open');
-                hamburgerBtn.setAttribute('aria-expanded', 'false');
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                
+                // If it is an internal anchor link (#section)
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    closeMenu();
+
+                    const targetSection = document.querySelector(href);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+
+                        if (history.pushState) {
+                            history.pushState(null, '', href);
+                        }
+                    }
+                } else {
+                    closeMenu();
+                }
             });
+        });
+
+        // Close menu on Escape key (tablet external keyboards)
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+                closeMenu();
+            }
+        });
+
+        // Close menu if rotated or resized to desktop view
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1024 && navMenu.classList.contains('open')) {
+                closeMenu();
+            }
         });
     }
 
@@ -45,6 +90,18 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 header.classList.remove('scrolled');
             }
+        });
+    }
+
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', () => {
+            scrollToTopBtn.hidden = window.scrollY <= 300;
+        }, { passive: true });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 
@@ -263,6 +320,23 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%20am%20interested%20in%20JAMB%202027%20Registration."
         },
+        referral_rewards: {
+            title: "Referral Rewards",
+            image: "./flyer-referral-rewards.jpg",
+            description: `
+                <p class="modal-intro"><strong>Refer a parent and earn with Dr. J Tutors!</strong></p>
+                <p>We're thrilled to launch our referral rewards programme. Get rewarded with up to a <strong>10% one-off commission</strong> after you've successfully referred a parent to us!</p>
+                <h4 class="modal-subheading">Referral T&amp;Cs:</h4>
+                <ul class="modal-bullets">
+                    <li>Tell a parent(s) about Dr. J TUTORS around you.</li>
+                    <li>Have the parent mention your name during inquiry.</li>
+                    <li>Receive your 10% one-off commission after their first tutoring session.</li>
+                    <li>Commission is only paid after a successful referral.</li>
+                </ul>
+                <p class="modal-footnote">Contact us on WhatsApp to refer a parent and learn more about our referral rewards programme.</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27d%20like%20to%20refer%20a%20parent%20and%20learn%20more%20about%20your%20referral%20rewards."
+        },
         not_in_nigeria: {
             title: "Not in Nigeria? You've Got No Problem!",
             image: "./flyer-not-in-nigeria.jpg",
@@ -312,6 +386,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="modal-footnote">📲 Book your child's slot today on WhatsApp or call 09074818280!</p>
             `,
             whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20for%20the%20Igbo%20Made%20Easy%20language%20lessons%20for%20my%20child."
+        },
+        yoruba: {
+            title: "Learn How to Speak Yoruba! (Ẹ jé ká kọ èdè Yorùbá)",
+            image: "./flyer-yoruba.jpg",
+            description: `
+                <p class="modal-intro">🇳🇬✨ <strong>Learn How to Speak Yoruba with Dr. J Tutors! – Ẹ jé ká kọ èdè Yorùbá!</strong></p>
+                <p>Connect your children to their rich Yoruba cultural heritage and language roots! Dr. J Tutors offers engaging, child-friendly Yoruba language lessons designed to make learning practical, enjoyable, and effective.</p>
+                
+                <h4 class="modal-subheading">What We Offer:</h4>
+                <ul class="modal-bullets">
+                    <li>🌱 <strong>Beginner to Intermediate:</strong> Suitable for absolute beginners and children expanding their vocabulary</li>
+                    <li>🗣️ <strong>Four-Skill Mastery:</strong> Speaking, listening, reading &amp; writing development</li>
+                    <li>🌍 <strong>Cultural Context:</strong> Folktales, proverbs, greetings, values, and real-world conversation via lessons</li>
+                    <li>🎯 <strong>Personalised Tutorial Sessions:</strong> Tailored to each student's age, level, and individual goals</li>
+                    <li>⏰ <strong>Flexible Schedules:</strong> Convenient weekend and weekday class times for busy families locally and abroad</li>
+                </ul>
+
+                <p class="modal-summary">💡 <em>Lessons are tailored to each student's age, level, and goals — the same result-driven approach that Dr. J Tutors is known for!</em></p>
+                <p class="modal-footnote">📲 Book your child's slot today on WhatsApp or call 09074818280!</p>
+            `,
+            whatsappUrl: "https://wa.me/2349074818280?text=Hi%20Dr.%20J%20Tutors%2C%20I%27m%20interested%20in%20enrolling%20for%20the%20Yoruba%20language%20classes%20for%20my%20child."
         },
         french: {
             title: "Say Bonjour to French! (French Classes)",

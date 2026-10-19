@@ -1867,6 +1867,41 @@ p {
     margin-left: 1px;
 }
 
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 6.5rem;
+    right: 2rem;
+    z-index: 998;
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: var(--radius-full);
+    background-color: var(--secondary);
+    color: #ffffff;
+    box-shadow: var(--shadow-md);
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.scroll-to-top:hover {
+    background-color: var(--secondary-hover);
+    transform: translateY(-3px);
+}
+
+.scroll-to-top:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+}
+
+.scroll-to-top[hidden] {
+    display: none;
+}
+
 /* Sticky WhatsApp Widget */
 .sticky-whatsapp-badge {
     position: fixed;
@@ -1969,8 +2004,22 @@ p {
     }
 }
 
-/* Mobile Nav Toggle states: max-width 768px */
-@media (max-width: 768px) {
+/* Nav overlay for click-outside-to-close on tablet & mobile */
+.nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(45, 27, 78, 0.35);
+    z-index: 990;
+    backdrop-filter: blur(2px);
+}
+
+.nav-overlay.active {
+    display: block;
+}
+
+/* Mobile & Tablet Nav Toggle states: max-width 1024px */
+@media (max-width: 1024px) {
     .site-header {
         padding: 0.6rem 0;
     }
@@ -2018,7 +2067,7 @@ p {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 280px;
+        width: 300px;
         height: 100vh;
         background-color: var(--neutral-light);
         box-shadow: var(--shadow-lg);
@@ -2026,6 +2075,7 @@ p {
         display: flex;
         flex-direction: column;
         z-index: 1050;
+        transition: right var(--transition-normal);
     }
     
     .nav-menu.open {
@@ -2059,7 +2109,7 @@ p {
         width: 100%;
     }
 
-    /* Adjust section titles on mobile */
+    /* Adjust section titles on tablet/mobile */
     .section-title-wrapper {
         margin-bottom: 2.5rem;
     }
@@ -2098,6 +2148,11 @@ p {
         bottom: 1.5rem;
         right: 1.5rem;
         padding: 0.8rem 1rem;
+    }
+
+    .scroll-to-top {
+        bottom: 5.5rem;
+        right: 1.5rem;
     }
     
     .whatsapp-badge-text {
@@ -2988,7 +3043,6 @@ p {
         justify-content: center;
     }
 }
-
 
 
 
